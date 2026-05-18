@@ -1,0 +1,9 @@
+services:
+  app:
+    build: .
+    container_name: teste
+    ports:
+      - "5002:5002"
+    env_file:
+      - .env  # Isso injeta as variáveis de ambiente no container
+    restart: always
