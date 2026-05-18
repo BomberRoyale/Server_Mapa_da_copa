@@ -1,3 +1,4 @@
+import { db } from './firebaseConfig';
 import { WebSocketServer, WebSocket } from 'ws';
 import Socket2 from "./core/socket2";
 
