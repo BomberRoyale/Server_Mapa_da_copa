@@ -91,6 +91,14 @@ server.on('connection', (ws: WebSocket) => {
         chamadas.verifDadosIniciais.Inicial(event, db, socket);
     });
 
+    socket.on("UID", (event) => {
+        chamadas.verifDadosIniciais.checarUid(event, socket);
+    });
+
+    socket.on("SIMULACAO", (event) => {
+        chamadas.sumulacaoCopa.salvarSimulacao(event, socket);
+    });
+
     socket.on('disconnect', () => {
         if (socket.id) {
             gerenciadorConexoes.remover(socket.id);            

@@ -5,9 +5,10 @@ import { gerenciadorConexoes } from "./../core/gerenciadorConexoes";
 
 const dao = new Dao();
 
+
 export default class Chamadas {
-      
-   verifDadosIniciais = {
+ 
+    verifDadosIniciais = {
         Inicial(dados: any, db: any, socket: Socket2) {            
             dao.buscaGenerico.buscaInicial(dados.token, db)
                 .then((result) => { 
@@ -28,9 +29,22 @@ export default class Chamadas {
         },
         checarUid(dados: any, socket: Socket2) {
             dao.checaUsuario.verificaUid(dados.token)
-            .then((result) =>{
+            .then(async(result) =>{
                 // Salvando para poder acessar depois
-                socket.id = result?.username;
+                socket.id = result?.usuario;
+
+                //Fazendo uma busca pelas preferencias para salvá-las caso as tenha.
+                try {
+                    const historico = await dao.simularCopa.buscarHistorico(socket.id);            
+                    // Injeta o histórico dentro do resultado principal!
+                    (result as any).preferenciasSelecao = historico;
+                    console.log(JSON.stringify(historico, null, 2));
+                } catch (err) {
+                    console.error("Erro ao buscar histórico, iniciando vazio:", err);
+                    (result as any).preferenciasSelecao = {};
+                }
+
+                // Salvando para poder acessar depois
                 socket.jogador = result;
 
                 //Salvando na lista de usuários online.
@@ -43,8 +57,53 @@ export default class Chamadas {
                     socket.emit('UID', IBD.criarPayload
                         ("ErroServidor", false, "Falha na comunicação com o banco."));
             });
-        }
-            
+        }            
     };
-        
+    sumulacaoCopa = {
+        salvarSimulacao(dados: any, socket: Socket2) {
+            if (!socket.id) {
+                socket.emit('SIMULACAO', IBD.criarPayload("NaoAutorizado", false, "Usuário não autenticado."));
+                return;
+            }
+            const ano: string = dados.ano; 
+            const simulacao: IBD.SimularCopa = dados.simulacao; 
+
+            if (!ano || !simulacao || !simulacao.nomeSelecao) {
+            socket.emit('Erro', IBD.criarPayload("DadosInvalidos", false, "Ano ou dados da simulação ausentes."));
+                return;
+            }
+
+            const timeFormatado = simulacao.nomeSelecao.toLowerCase().replace(/\s/g, "");
+            const nomeDocumento = `${ano}_${timeFormatado}`;
+            
+            if (!socket.jogador.preferenciasSelecao) {
+                socket.jogador.preferenciasSelecao = {};
+            }
+            const estadoAnterior = socket.jogador.preferenciasSelecao[nomeDocumento];
+            
+            socket.jogador.preferenciasSelecao[nomeDocumento] = simulacao;
+            socket.emit('SIMULACAO', IBD.criarPayload("Sucesso", true, simulacao));
+            
+            dao.simularCopa.salvarCaminho(socket.id, nomeDocumento, simulacao)
+            .then(() => {                                
+                console.log(`💾 Simulação de ${simulacao.nomeSelecao} (${ano}) salva com sucesso para: ${socket.id}`);
+            })
+            .catch(err => {
+                console.log("Erro ao salvar simulação no banco:", err);
+                if (estadoAnterior) {
+                    socket.jogador.preferenciasSelecao[nomeDocumento] = estadoAnterior;
+                } else {
+                    delete socket.jogador.preferenciasSelecao[nomeDocumento];
+                }
+
+                // Verificar como tratar depois no C#
+                socket.emit('SIMULACAO', IBD.criarPayload("FalhaGravacaoBanco", false, {
+                    mensagem: "Erro ao sincronizar dados com o servidor em nuvem.",
+                    documentoFalho: nomeDocumento,
+                    ano: ano,
+                    simulacao: simulacao
+                }));
+            });
+        }
+    };        
 }

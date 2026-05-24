@@ -2,3 +2,6 @@ node_modules
 .env
 build
 firebase-key.json
+
+# Ignora scripts locais de teste
+**/pegarToken.ts
