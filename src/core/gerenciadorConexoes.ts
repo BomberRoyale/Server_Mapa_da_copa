@@ -27,6 +27,10 @@ class GerenciadorConexoes {
     public obterTodasConexoes(): Map<string, Socket2> {
         return this.conexoesAtivas;
     }
+
+    public verificarOnline (uid: string): boolean{
+        return this.conexoesAtivas.has(uid);
+    }
 }
 
 // Exporta uma única instância viva para o servidor inteiro usar

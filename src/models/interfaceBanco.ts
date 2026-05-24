@@ -10,12 +10,12 @@ export const criarPayload = (ev: string, situacao: boolean, valor: any): IPayloa
 };
 
 export interface IdUsuario{
-    usuario: string;
+    username: string;
     dataCriacao: any;
 }
 
-export const criarIDUsuario = (usuario: string, dataCriacao: any): IdUsuario => {
-    return {usuario, dataCriacao};
+export const criarIDUsuario = (username: string, dataCriacao: any): IdUsuario => {
+    return {username, dataCriacao};
 };
 
 export interface SimularCopa{

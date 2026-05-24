@@ -31,7 +31,13 @@ export default class Chamadas {
             dao.checaUsuario.verificaUid(dados.token)
             .then(async(result) =>{
                 // Salvando para poder acessar depois
-                socket.id = result?.usuario;
+                socket.id = result?.username;
+
+                // Validando se já está online
+                if (gerenciadorConexoes.verificarOnline(socket.id)) {
+                    socket.emit(dados.ev, IBD.criarPayload("DuploLogin", false, "Você já está conectado em outro dispositivo."));
+                    return;
+                }
 
                 //Fazendo uma busca pelas preferencias para salvá-las caso as tenha.
                 try {
