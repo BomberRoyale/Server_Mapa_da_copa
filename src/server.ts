@@ -1,6 +1,7 @@
 import { WebSocketServer, WebSocket } from 'ws';
 import Socket2 from "./core/socket2";
 import Chamadas from "./chamadas/inicial";
+import { gerenciadorConexoes } from './core/gerenciadorConexoes';
 
 import { db } from './firebaseConfig';
 
@@ -91,6 +92,11 @@ server.on('connection', (ws: WebSocket) => {
     });
 
     socket.on('disconnect', () => {
-        console.log('Aluno desconectado.');
+        if (socket.id) {
+            gerenciadorConexoes.remover(socket.id);            
+            console.log(`Usuário [${socket.id}] desconectado.`);
+        } else {
+            console.log("Usuário Anônimo desconectou antes de logar.");
+        }
     });
 });

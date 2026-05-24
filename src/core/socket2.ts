@@ -30,6 +30,7 @@ export default class Socket2 {
 
 	public ws : WebSocket;
 	public id : string;
+	public jogador: any;
 
 	private options : Socket2Options = {
 		ping: true,
