@@ -34,8 +34,8 @@ export default class Socket2 {
 
 	private options : Socket2Options = {
 		ping: true,
-		pingInterval: 10*1000, // 5 minutes
-		pingTimeout: 10*1000, // 1 minute
+		pingInterval: 30*1000, // 30 segundos
+		pingTimeout: 15*1000, // 15 segundos
 		debug: false
 	};
 
