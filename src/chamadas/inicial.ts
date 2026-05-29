@@ -38,17 +38,9 @@ export default class Chamadas {
                     socket.emit(dados.ev, IBD.criarPayload("DuploLogin", false, "Você já está conectado em outro dispositivo."));
                     return;
                 }
-
-                //Fazendo uma busca pelas preferencias para salvá-las caso as tenha.
-                try {
-                    const historico = await dao.simularCopa.buscarHistorico(socket.id);            
-                    // Injeta o histórico dentro do resultado principal!
-                    (result as any).preferenciasSelecao = historico;
-                    console.log(JSON.stringify(historico, null, 2));
-                } catch (err) {
-                    console.error("Erro ao buscar histórico, iniciando vazio:", err);
-                    (result as any).preferenciasSelecao = {};
-                }
+                
+                // criando arquivo para guardar futuramente as preferências.
+                (result as any).preferenciasSelecao = {};
 
                 // Salvando para poder acessar depois
                 socket.jogador = result;
@@ -109,6 +101,29 @@ export default class Chamadas {
                     ano: ano,
                     simulacao: simulacao
                 }));
+            });
+        },
+        listarSimulacoes(dados: any, socket: Socket2) {
+            if (!socket.id) {
+                socket.emit('LISTAR_SIMULACOES', IBD.criarPayload("NaoAutorizado", false, "Usuário não autenticado."));
+                return;
+            }
+
+            console.log(`Buscando simulações sob demanda para o jogador: ${socket.id}`);
+
+            dao.simularCopa.buscarHistorico(socket.id)
+            .then((result) => {
+                // Atualiza a memória do servidor com os dados frescos
+                if (socket.jogador) {
+                    socket.jogador.preferenciasSelecao = result;
+                }
+
+                // Envia a lista para a Unity
+                socket.emit('LISTAR_SIMULACOES', IBD.criarPayload("Sucesso", true, result));
+            })
+            .catch(err => {
+                console.error("Erro ao buscar histórico:", err);
+                socket.emit('LISTAR_SIMULACOES', IBD.criarPayload("ErroServidor", false, "Falha ao recuperar simulações do banco."));
             });
         }
     };        
