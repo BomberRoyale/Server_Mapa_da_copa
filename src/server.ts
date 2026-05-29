@@ -99,6 +99,11 @@ server.on('connection', (ws: WebSocket) => {
         chamadas.sumulacaoCopa.salvarSimulacao(event, socket);
     });
 
+    socket.on('LISTAR_SIMULACOES', (event) => {
+    chamadas.sumulacaoCopa.listarSimulacoes(event, socket);
+    });
+
+
     socket.on('disconnect', () => {
         if (socket.id) {
             gerenciadorConexoes.remover(socket.id);            
