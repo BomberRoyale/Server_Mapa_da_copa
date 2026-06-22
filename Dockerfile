@@ -30,6 +30,8 @@ COPY --from=builder /app/build ./build
 # Copia a chave do Firebase
 COPY firebase-key.json ./firebase-key.json
 
+COPY database/ ./database/
+
 EXPOSE 5002
 
 CMD ["node", "build/server.js"]
