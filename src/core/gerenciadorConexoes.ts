@@ -1,4 +1,5 @@
 import Socket2 from "./socket2";
+import * as IBD from "../models/interfaceBanco";
 
 class GerenciadorConexoes {
     // Lista de Usuarios conectados
@@ -30,6 +31,21 @@ class GerenciadorConexoes {
 
     public verificarOnline (uid: string): boolean{
         return this.conexoesAtivas.has(uid);
+    }
+
+    public transmitirParaTodos(evento: string, dados: any): void {
+        const total = this.totalOnline();
+        if (total === 0) return; // Ninguém online, não faz nada
+
+        this.conexoesAtivas.forEach((socket, uid) => {
+            try {
+                socket.emit(evento, IBD.criarPayload(evento, true, dados));
+            } catch (erro) {
+                console.error(`❌ Erro ao enviar evento para o usuário [${uid}]:`, erro);
+            }
+        });
+
+        console.log(`📡 [Megafone] Evento '${evento}' enviado para ${total} usuário(s) ativo(s).`);
     }
 }
 

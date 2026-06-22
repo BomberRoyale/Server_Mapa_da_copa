@@ -1,0 +1,2186 @@
+[
+  {
+    "id": 1,
+    "id_oficial": 537327,
+    "local": "Cidade do México/México",
+    "data": "2026-06-11T16:00:00-03:00",
+    "rodada": {
+      "fase": "GROUP_STAGE",
+      "numero_jogo": 1,
+      "nome_rodada": "RODADA_1",
+      "grupo": "A"
+    },
+    "match": {
+      "1": "México",
+      "2": "África do Sul"
+    },
+    "resultados": {
+      "1": 2,
+      "2": 0,
+      "vencedor": "HOME_TEAM"
+    }
+  },
+  {
+    "id": 2,
+    "id_oficial": 537328,
+    "local": "Guadalajara/México",
+    "data": "2026-06-11T23:00:00-03:00",
+    "rodada": {
+      "fase": "GROUP_STAGE",
+      "numero_jogo": 2,
+      "nome_rodada": "RODADA_1",
+      "grupo": "A"
+    },
+    "match": {
+      "1": "Coreia do Sul",
+      "2": "República Tcheca"
+    },
+    "resultados": {
+      "1": 2,
+      "2": 1,
+      "vencedor": "HOME_TEAM"
+    }
+  },
+  {
+    "id": 3,
+    "id_oficial": 537333,
+    "local": "Toronto/Canadá",
+    "data": "2026-06-12T16:00:00-03:00",
+    "rodada": {
+      "fase": "GROUP_STAGE",
+      "numero_jogo": 3,
+      "nome_rodada": "RODADA_1",
+      "grupo": "B"
+    },
+    "match": {
+      "1": "Canadá",
+      "2": "Bósnia e Herzegovina"
+    },
+    "resultados": {
+      "1": 1,
+      "2": 1,
+      "vencedor": "DRAW"
+    }
+  },
+  {
+    "id": 4,
+    "id_oficial": 537345,
+    "local": "Los Angeles/EUA",
+    "data": "2026-06-12T22:00:00-03:00",
+    "rodada": {
+      "fase": "GROUP_STAGE",
+      "numero_jogo": 4,
+      "nome_rodada": "RODADA_1",
+      "grupo": "D"
+    },
+    "match": {
+      "1": "Estados Unidos",
+      "2": "Paraguai"
+    },
+    "resultados": {
+      "1": 4,
+      "2": 1,
+      "vencedor": "HOME_TEAM"
+    }
+  },
+  {
+    "id": 5,
+    "id_oficial": 537334,
+    "local": "Santa Clara/EUA",
+    "data": "2026-06-13T16:00:00-03:00",
+    "rodada": {
+      "fase": "GROUP_STAGE",
+      "numero_jogo": 5,
+      "nome_rodada": "RODADA_1",
+      "grupo": "B"
+    },
+    "match": {
+      "1": "Catar",
+      "2": "Suíça"
+    },
+    "resultados": {
+      "1": 1,
+      "2": 1,
+      "vencedor": "DRAW"
+    }
+  },
+  {
+    "id": 6,
+    "id_oficial": 537339,
+    "local": "Nova York e Nova Jersey/EUA",
+    "data": "2026-06-13T19:00:00-03:00",
+    "rodada": {
+      "fase": "GROUP_STAGE",
+      "numero_jogo": 6,
+      "nome_rodada": "RODADA_1",
+      "grupo": "C"
+    },
+    "match": {
+      "1": "Brasil",
+      "2": "Marrocos"
+    },
+    "resultados": {
+      "1": 1,
+      "2": 1,
+      "vencedor": "DRAW"
+    }
+  },
+  {
+    "id": 7,
+    "id_oficial": 537340,
+    "local": "Boston/EUA",
+    "data": "2026-06-13T22:00:00-03:00",
+    "rodada": {
+      "fase": "GROUP_STAGE",
+      "numero_jogo": 7,
+      "nome_rodada": "RODADA_1",
+      "grupo": "C"
+    },
+    "match": {
+      "1": "Haiti",
+      "2": "Escócia"
+    },
+    "resultados": {
+      "1": 0,
+      "2": 1,
+      "vencedor": "AWAY_TEAM"
+    }
+  },
+  {
+    "id": 8,
+    "id_oficial": 537346,
+    "local": "Vancouver/Canadá",
+    "data": "2026-06-14T01:00:00-03:00",
+    "rodada": {
+      "fase": "GROUP_STAGE",
+      "numero_jogo": 8,
+      "nome_rodada": "RODADA_1",
+      "grupo": "D"
+    },
+    "match": {
+      "1": "Austrália",
+      "2": "Turquia"
+    },
+    "resultados": {
+      "1": 2,
+      "2": 0,
+      "vencedor": "HOME_TEAM"
+    }
+  },
+  {
+    "id": 9,
+    "id_oficial": 537351,
+    "local": "Houston/EUA",
+    "data": "2026-06-14T14:00:00-03:00",
+    "rodada": {
+      "fase": "GROUP_STAGE",
+      "numero_jogo": 9,
+      "nome_rodada": "RODADA_1",
+      "grupo": "E"
+    },
+    "match": {
+      "1": "Alemanha",
+      "2": "Curaçao"
+    },
+    "resultados": {
+      "1": 7,
+      "2": 1,
+      "vencedor": "HOME_TEAM"
+    }
+  },
+  {
+    "id": 10,
+    "id_oficial": 537357,
+    "local": "Dallas/EUA",
+    "data": "2026-06-14T17:00:00-03:00",
+    "rodada": {
+      "fase": "GROUP_STAGE",
+      "numero_jogo": 10,
+      "nome_rodada": "RODADA_1",
+      "grupo": "F"
+    },
+    "match": {
+      "1": "Holanda",
+      "2": "Japão"
+    },
+    "resultados": {
+      "1": 2,
+      "2": 2,
+      "vencedor": "DRAW"
+    }
+  },
+  {
+    "id": 11,
+    "id_oficial": 537352,
+    "local": "Filadélfia/EUA",
+    "data": "2026-06-14T20:00:00-03:00",
+    "rodada": {
+      "fase": "GROUP_STAGE",
+      "numero_jogo": 11,
+      "nome_rodada": "RODADA_1",
+      "grupo": "E"
+    },
+    "match": {
+      "1": "Costa do Marfim",
+      "2": "Equador"
+    },
+    "resultados": {
+      "1": 1,
+      "2": 0,
+      "vencedor": "HOME_TEAM"
+    }
+  },
+  {
+    "id": 12,
+    "id_oficial": 537358,
+    "local": "Monterrey/México",
+    "data": "2026-06-14T23:00:00-03:00",
+    "rodada": {
+      "fase": "GROUP_STAGE",
+      "numero_jogo": 12,
+      "nome_rodada": "RODADA_1",
+      "grupo": "F"
+    },
+    "match": {
+      "1": "Suécia",
+      "2": "Tunísia"
+    },
+    "resultados": {
+      "1": 5,
+      "2": 1,
+      "vencedor": "HOME_TEAM"
+    }
+  },
+  {
+    "id": 13,
+    "id_oficial": 537369,
+    "local": "Atlanta/EUA",
+    "data": "2026-06-15T13:00:00-03:00",
+    "rodada": {
+      "fase": "GROUP_STAGE",
+      "numero_jogo": 13,
+      "nome_rodada": "RODADA_1",
+      "grupo": "H"
+    },
+    "match": {
+      "1": "Espanha",
+      "2": "Cabo Verde"
+    },
+    "resultados": {
+      "1": 0,
+      "2": 0,
+      "vencedor": "DRAW"
+    }
+  },
+  {
+    "id": 14,
+    "id_oficial": 537363,
+    "local": "Seattle/EUA",
+    "data": "2026-06-15T16:00:00-03:00",
+    "rodada": {
+      "fase": "GROUP_STAGE",
+      "numero_jogo": 14,
+      "nome_rodada": "RODADA_1",
+      "grupo": "G"
+    },
+    "match": {
+      "1": "Bélgica",
+      "2": "Egito"
+    },
+    "resultados": {
+      "1": 1,
+      "2": 1,
+      "vencedor": "DRAW"
+    }
+  },
+  {
+    "id": 15,
+    "id_oficial": 537370,
+    "local": "Miami/EUA",
+    "data": "2026-06-15T19:00:00-03:00",
+    "rodada": {
+      "fase": "GROUP_STAGE",
+      "numero_jogo": 15,
+      "nome_rodada": "RODADA_1",
+      "grupo": "H"
+    },
+    "match": {
+      "1": "Arábia Saudita",
+      "2": "Uruguai"
+    },
+    "resultados": {
+      "1": 1,
+      "2": 1,
+      "vencedor": "DRAW"
+    }
+  },
+  {
+    "id": 16,
+    "id_oficial": 537364,
+    "local": "Los Angeles/EUA",
+    "data": "2026-06-15T22:00:00-03:00",
+    "rodada": {
+      "fase": "GROUP_STAGE",
+      "numero_jogo": 16,
+      "nome_rodada": "RODADA_1",
+      "grupo": "G"
+    },
+    "match": {
+      "1": "Irã",
+      "2": "Nova Zelândia"
+    },
+    "resultados": {
+      "1": 2,
+      "2": 2,
+      "vencedor": "DRAW"
+    }
+  },
+  {
+    "id": 17,
+    "id_oficial": 537391,
+    "local": "Nova York e Nova Jersey/EUA",
+    "data": "2026-06-16T16:00:00-03:00",
+    "rodada": {
+      "fase": "GROUP_STAGE",
+      "numero_jogo": 17,
+      "nome_rodada": "RODADA_1",
+      "grupo": "I"
+    },
+    "match": {
+      "1": "França",
+      "2": "Senegal"
+    },
+    "resultados": {
+      "1": 3,
+      "2": 1,
+      "vencedor": "HOME_TEAM"
+    }
+  },
+  {
+    "id": 18,
+    "id_oficial": 537392,
+    "local": "Boston/EUA",
+    "data": "2026-06-16T19:00:00-03:00",
+    "rodada": {
+      "fase": "GROUP_STAGE",
+      "numero_jogo": 18,
+      "nome_rodada": "RODADA_1",
+      "grupo": "I"
+    },
+    "match": {
+      "1": "Iraque",
+      "2": "Noruega"
+    },
+    "resultados": {
+      "1": 1,
+      "2": 4,
+      "vencedor": "AWAY_TEAM"
+    }
+  },
+  {
+    "id": 19,
+    "id_oficial": 537397,
+    "local": "Kansas City/EUA",
+    "data": "2026-06-16T22:00:00-03:00",
+    "rodada": {
+      "fase": "GROUP_STAGE",
+      "numero_jogo": 19,
+      "nome_rodada": "RODADA_1",
+      "grupo": "J"
+    },
+    "match": {
+      "1": "Argentina",
+      "2": "Argélia"
+    },
+    "resultados": {
+      "1": 3,
+      "2": 0,
+      "vencedor": "HOME_TEAM"
+    }
+  },
+  {
+    "id": 20,
+    "id_oficial": 537398,
+    "local": "Santa Clara/EUA",
+    "data": "2026-06-17T01:00:00-03:00",
+    "rodada": {
+      "fase": "GROUP_STAGE",
+      "numero_jogo": 20,
+      "nome_rodada": "RODADA_1",
+      "grupo": "J"
+    },
+    "match": {
+      "1": "Áustria",
+      "2": "Jordânia"
+    },
+    "resultados": {
+      "1": 3,
+      "2": 1,
+      "vencedor": "HOME_TEAM"
+    }
+  },
+  {
+    "id": 21,
+    "id_oficial": 537403,
+    "local": "Houston/EUA",
+    "data": "2026-06-17T14:00:00-03:00",
+    "rodada": {
+      "fase": "GROUP_STAGE",
+      "numero_jogo": 21,
+      "nome_rodada": "RODADA_1",
+      "grupo": "K"
+    },
+    "match": {
+      "1": "Portugal",
+      "2": "República Democrática do Congo"
+    },
+    "resultados": {
+      "1": 1,
+      "2": 1,
+      "vencedor": "DRAW"
+    }
+  },
+  {
+    "id": 22,
+    "id_oficial": 537409,
+    "local": "Dallas/EUA",
+    "data": "2026-06-17T17:00:00-03:00",
+    "rodada": {
+      "fase": "GROUP_STAGE",
+      "numero_jogo": 22,
+      "nome_rodada": "RODADA_1",
+      "grupo": "L"
+    },
+    "match": {
+      "1": "Inglaterra",
+      "2": "Croácia"
+    },
+    "resultados": {
+      "1": 4,
+      "2": 2,
+      "vencedor": "HOME_TEAM"
+    }
+  },
+  {
+    "id": 23,
+    "id_oficial": 537410,
+    "local": "Toronto/Canadá",
+    "data": "2026-06-17T20:00:00-03:00",
+    "rodada": {
+      "fase": "GROUP_STAGE",
+      "numero_jogo": 23,
+      "nome_rodada": "RODADA_1",
+      "grupo": "L"
+    },
+    "match": {
+      "1": "Gana",
+      "2": "Panamá"
+    },
+    "resultados": {
+      "1": 1,
+      "2": 0,
+      "vencedor": "HOME_TEAM"
+    }
+  },
+  {
+    "id": 24,
+    "id_oficial": 537404,
+    "local": "Cidade do México/México",
+    "data": "2026-06-17T21:00:00-03:00",
+    "rodada": {
+      "fase": "GROUP_STAGE",
+      "numero_jogo": 24,
+      "nome_rodada": "RODADA_1",
+      "grupo": "K"
+    },
+    "match": {
+      "1": "Uzbequistão",
+      "2": "Colômbia"
+    },
+    "resultados": {
+      "1": 1,
+      "2": 3,
+      "vencedor": "AWAY_TEAM"
+    }
+  },
+  {
+    "id": 25,
+    "id_oficial": 537329,
+    "local": "Atlanta/EUA",
+    "data": "2026-06-18T13:00:00-03:00",
+    "rodada": {
+      "fase": "GROUP_STAGE",
+      "numero_jogo": 25,
+      "nome_rodada": "RODADA_2",
+      "grupo": "A"
+    },
+    "match": {
+      "1": "República Tcheca",
+      "2": "África do Sul"
+    },
+    "resultados": {
+      "1": 1,
+      "2": 1,
+      "vencedor": "DRAW"
+    }
+  },
+  {
+    "id": 26,
+    "id_oficial": 537335,
+    "local": "Los Angeles/EUA",
+    "data": "2026-06-18T16:00:00-03:00",
+    "rodada": {
+      "fase": "GROUP_STAGE",
+      "numero_jogo": 26,
+      "nome_rodada": "RODADA_2",
+      "grupo": "B"
+    },
+    "match": {
+      "1": "Suíça",
+      "2": "Bósnia e Herzegovina"
+    },
+    "resultados": {
+      "1": 4,
+      "2": 1,
+      "vencedor": "HOME_TEAM"
+    }
+  },
+  {
+    "id": 27,
+    "id_oficial": 537336,
+    "local": "Vancouver/Canadá",
+    "data": "2026-06-18T19:00:00-03:00",
+    "rodada": {
+      "fase": "GROUP_STAGE",
+      "numero_jogo": 27,
+      "nome_rodada": "RODADA_2",
+      "grupo": "B"
+    },
+    "match": {
+      "1": "Canadá",
+      "2": "Catar"
+    },
+    "resultados": {
+      "1": 6,
+      "2": 0,
+      "vencedor": "HOME_TEAM"
+    }
+  },
+  {
+    "id": 28,
+    "id_oficial": 537330,
+    "local": "Guadalajara/México",
+    "data": "2026-06-18T22:00:00-03:00",
+    "rodada": {
+      "fase": "GROUP_STAGE",
+      "numero_jogo": 28,
+      "nome_rodada": "RODADA_2",
+      "grupo": "A"
+    },
+    "match": {
+      "1": "México",
+      "2": "Coreia do Sul"
+    },
+    "resultados": {
+      "1": 1,
+      "2": 0,
+      "vencedor": "HOME_TEAM"
+    }
+  },
+  {
+    "id": 29,
+    "id_oficial": 537348,
+    "local": "Seattle/EUA",
+    "data": "2026-06-19T16:00:00-03:00",
+    "rodada": {
+      "fase": "GROUP_STAGE",
+      "numero_jogo": 29,
+      "nome_rodada": "RODADA_2",
+      "grupo": "D"
+    },
+    "match": {
+      "1": "Estados Unidos",
+      "2": "Austrália"
+    },
+    "resultados": {
+      "1": 2,
+      "2": 0,
+      "vencedor": "HOME_TEAM"
+    }
+  },
+  {
+    "id": 30,
+    "id_oficial": 537342,
+    "local": "Boston/EUA",
+    "data": "2026-06-19T19:00:00-03:00",
+    "rodada": {
+      "fase": "GROUP_STAGE",
+      "numero_jogo": 30,
+      "nome_rodada": "RODADA_2",
+      "grupo": "C"
+    },
+    "match": {
+      "1": "Escócia",
+      "2": "Marrocos"
+    },
+    "resultados": {
+      "1": 0,
+      "2": 1,
+      "vencedor": "AWAY_TEAM"
+    }
+  },
+  {
+    "id": 31,
+    "id_oficial": 537341,
+    "local": "Filadélfia/EUA",
+    "data": "2026-06-19T21:30:00-03:00",
+    "rodada": {
+      "fase": "GROUP_STAGE",
+      "numero_jogo": 31,
+      "nome_rodada": "RODADA_2",
+      "grupo": "C"
+    },
+    "match": {
+      "1": "Brasil",
+      "2": "Haiti"
+    },
+    "resultados": {
+      "1": 3,
+      "2": 0,
+      "vencedor": "HOME_TEAM"
+    }
+  },
+  {
+    "id": 32,
+    "id_oficial": 537347,
+    "local": "Santa Clara/EUA",
+    "data": "2026-06-19T00:00:00-03:00",
+    "rodada": {
+      "fase": "GROUP_STAGE",
+      "numero_jogo": 32,
+      "nome_rodada": "RODADA_2",
+      "grupo": "D"
+    },
+    "match": {
+      "1": "Turquia",
+      "2": "Paraguai"
+    },
+    "resultados": {
+      "1": 0,
+      "2": 1,
+      "vencedor": "AWAY_TEAM"
+    }
+  },
+  {
+    "id": 33,
+    "id_oficial": 537359,
+    "local": "Houston/EUA",
+    "data": "2026-06-20T14:00:00-03:00",
+    "rodada": {
+      "fase": "GROUP_STAGE",
+      "numero_jogo": 33,
+      "nome_rodada": "RODADA_2",
+      "grupo": "F"
+    },
+    "match": {
+      "1": "Holanda",
+      "2": "Suécia"
+    },
+    "resultados": {
+      "1": 5,
+      "2": 1,
+      "vencedor": "HOME_TEAM"
+    }
+  },
+  {
+    "id": 34,
+    "id_oficial": 537353,
+    "local": "Toronto/Canadá",
+    "data": "2026-06-20T17:00:00-03:00",
+    "rodada": {
+      "fase": "GROUP_STAGE",
+      "numero_jogo": 34,
+      "nome_rodada": "RODADA_2",
+      "grupo": "E"
+    },
+    "match": {
+      "1": "Alemanha",
+      "2": "Costa do Marfim"
+    },
+    "resultados": {
+      "1": 2,
+      "2": 1,
+      "vencedor": "HOME_TEAM"
+    }
+  },
+  {
+    "id": 35,
+    "id_oficial": 537354,
+    "local": "Kansas City/EUA",
+    "data": "2026-06-20T21:00:00-03:00",
+    "rodada": {
+      "fase": "GROUP_STAGE",
+      "numero_jogo": 35,
+      "nome_rodada": "RODADA_2",
+      "grupo": "E"
+    },
+    "match": {
+      "1": "Equador",
+      "2": "Curaçao"
+    },
+    "resultados": {
+      "1": 0,
+      "2": 0,
+      "vencedor": "DRAW"
+    }
+  },
+  {
+    "id": 36,
+    "id_oficial": 537360,
+    "local": "Monterrey/México",
+    "data": "2026-06-21T01:00:00-03:00",
+    "rodada": {
+      "fase": "GROUP_STAGE",
+      "numero_jogo": 36,
+      "nome_rodada": "RODADA_2",
+      "grupo": "F"
+    },
+    "match": {
+      "1": "Tunísia",
+      "2": "Japão"
+    },
+    "resultados": {
+      "1": 0,
+      "2": 4,
+      "vencedor": "AWAY_TEAM"
+    }
+  },
+  {
+    "id": 37,
+    "id_oficial": 537371,
+    "local": "Atlanta/EUA",
+    "data": "2026-06-21T13:00:00-03:00",
+    "rodada": {
+      "fase": "GROUP_STAGE",
+      "numero_jogo": 37,
+      "nome_rodada": "RODADA_2",
+      "grupo": "H"
+    },
+    "match": {
+      "1": "Espanha",
+      "2": "Arábia Saudita"
+    },
+    "resultados": {
+      "1": 4,
+      "2": 0,
+      "vencedor": "HOME_TEAM"
+    }
+  },
+  {
+    "id": 38,
+    "id_oficial": 537365,
+    "local": "Los Angeles/EUA",
+    "data": "2026-06-21T16:00:00-03:00",
+    "rodada": {
+      "fase": "GROUP_STAGE",
+      "numero_jogo": 38,
+      "nome_rodada": "RODADA_2",
+      "grupo": "G"
+    },
+    "match": {
+      "1": "Bélgica",
+      "2": "Irã"
+    },
+    "resultados": {
+      "1": 0,
+      "2": 0,
+      "vencedor": "DRAW"
+    }
+  },
+  {
+    "id": 39,
+    "id_oficial": 537372,
+    "local": "Miami/EUA",
+    "data": "2026-06-21T19:00:00-03:00",
+    "rodada": {
+      "fase": "GROUP_STAGE",
+      "numero_jogo": 39,
+      "nome_rodada": "RODADA_2",
+      "grupo": "H"
+    },
+    "match": {
+      "1": "Uruguai",
+      "2": "Cabo Verde"
+    },
+    "resultados": {
+      "1": 2,
+      "2": 2,
+      "vencedor": "DRAW"
+    }
+  },
+  {
+    "id": 40,
+    "id_oficial": 537366,
+    "local": "Vancouver/Canadá",
+    "data": "2026-06-21T22:00:00-03:00",
+    "rodada": {
+      "fase": "GROUP_STAGE",
+      "numero_jogo": 40,
+      "nome_rodada": "RODADA_2",
+      "grupo": "G"
+    },
+    "match": {
+      "1": "Nova Zelândia",
+      "2": "Egito"
+    },
+    "resultados": {
+      "1": null,
+      "2": null,
+      "vencedor": null
+    }
+  },
+  {
+    "id": 41,
+    "id_oficial": 537399,
+    "local": "Dallas/EUA",
+    "data": "2026-06-22T14:00:00-03:00",
+    "rodada": {
+      "fase": "GROUP_STAGE",
+      "numero_jogo": 41,
+      "nome_rodada": "RODADA_2",
+      "grupo": "J"
+    },
+    "match": {
+      "1": "Argentina",
+      "2": "Áustria"
+    },
+    "resultados": {
+      "1": null,
+      "2": null,
+      "vencedor": null
+    }
+  },
+  {
+    "id": 42,
+    "id_oficial": 537393,
+    "local": "Filadélfia/EUA",
+    "data": "2026-06-22T18:00:00-03:00",
+    "rodada": {
+      "fase": "GROUP_STAGE",
+      "numero_jogo": 42,
+      "nome_rodada": "RODADA_2",
+      "grupo": "I"
+    },
+    "match": {
+      "1": "França",
+      "2": "Iraque"
+    },
+    "resultados": {
+      "1": null,
+      "2": null,
+      "vencedor": null
+    }
+  },
+  {
+    "id": 43,
+    "id_oficial": 537394,
+    "local": "Nova York e Nova Jersey/EUA",
+    "data": "2026-06-22T21:00:00-03:00",
+    "rodada": {
+      "fase": "GROUP_STAGE",
+      "numero_jogo": 43,
+      "nome_rodada": "RODADA_2",
+      "grupo": "I"
+    },
+    "match": {
+      "1": "Noruega",
+      "2": "Senegal"
+    },
+    "resultados": {
+      "1": null,
+      "2": null,
+      "vencedor": null
+    }
+  },
+  {
+    "id": 44,
+    "id_oficial": 537400,
+    "local": "Santa Clara/EUA",
+    "data": "2026-06-23T00:00:00-03:00",
+    "rodada": {
+      "fase": "GROUP_STAGE",
+      "numero_jogo": 44,
+      "nome_rodada": "RODADA_2",
+      "grupo": "J"
+    },
+    "match": {
+      "1": "Jordânia",
+      "2": "Argélia"
+    },
+    "resultados": {
+      "1": null,
+      "2": null,
+      "vencedor": null
+    }
+  },
+  {
+    "id": 45,
+    "id_oficial": 537405,
+    "local": "Houston/EUA",
+    "data": "2026-06-23T14:00:00-03:00",
+    "rodada": {
+      "fase": "GROUP_STAGE",
+      "numero_jogo": 45,
+      "nome_rodada": "RODADA_2",
+      "grupo": "K"
+    },
+    "match": {
+      "1": "Portugal",
+      "2": "Uzbequistão"
+    },
+    "resultados": {
+      "1": null,
+      "2": null,
+      "vencedor": null
+    }
+  },
+  {
+    "id": 46,
+    "id_oficial": 537411,
+    "local": "Boston/EUA",
+    "data": "2026-06-23T17:00:00-03:00",
+    "rodada": {
+      "fase": "GROUP_STAGE",
+      "numero_jogo": 46,
+      "nome_rodada": "RODADA_2",
+      "grupo": "L"
+    },
+    "match": {
+      "1": "Inglaterra",
+      "2": "Gana"
+    },
+    "resultados": {
+      "1": null,
+      "2": null,
+      "vencedor": null
+    }
+  },
+  {
+    "id": 47,
+    "id_oficial": 537412,
+    "local": "Toronto/Canadá",
+    "data": "2026-06-23T20:00:00-03:00",
+    "rodada": {
+      "fase": "GROUP_STAGE",
+      "numero_jogo": 47,
+      "nome_rodada": "RODADA_2",
+      "grupo": "L"
+    },
+    "match": {
+      "1": "Panamá",
+      "2": "Croácia"
+    },
+    "resultados": {
+      "1": null,
+      "2": null,
+      "vencedor": null
+    }
+  },
+  {
+    "id": 48,
+    "id_oficial": 537406,
+    "local": "Guadalajara/México",
+    "data": "2026-06-23T23:00:00-03:00",
+    "rodada": {
+      "fase": "GROUP_STAGE",
+      "numero_jogo": 48,
+      "nome_rodada": "RODADA_2",
+      "grupo": "K"
+    },
+    "match": {
+      "1": "Colômbia",
+      "2": "República Democrática do Congo"
+    },
+    "resultados": {
+      "1": null,
+      "2": null,
+      "vencedor": null
+    }
+  },
+  {
+    "id": 49,
+    "id_oficial": 537337,
+    "local": "Vancouver/Canadá",
+    "data": "2026-06-24T16:00:00-03:00",
+    "rodada": {
+      "fase": "GROUP_STAGE",
+      "numero_jogo": 49,
+      "nome_rodada": "RODADA_3",
+      "grupo": "B"
+    },
+    "match": {
+      "1": "Suíça",
+      "2": "Canadá"
+    },
+    "resultados": {
+      "1": null,
+      "2": null,
+      "vencedor": null
+    }
+  },
+  {
+    "id": 50,
+    "id_oficial": 537338,
+    "local": "Seattle/EUA",
+    "data": "2026-06-24T16:00:00-03:00",
+    "rodada": {
+      "fase": "GROUP_STAGE",
+      "numero_jogo": 50,
+      "nome_rodada": "RODADA_3",
+      "grupo": "B"
+    },
+    "match": {
+      "1": "Bósnia e Herzegovina",
+      "2": "Catar"
+    },
+    "resultados": {
+      "1": null,
+      "2": null,
+      "vencedor": null
+    }
+  },
+  {
+    "id": 51,
+    "id_oficial": 537344,
+    "local": "Atlanta/EUA",
+    "data": "2026-06-24T19:00:00-03:00",
+    "rodada": {
+      "fase": "GROUP_STAGE",
+      "numero_jogo": 51,
+      "nome_rodada": "RODADA_3",
+      "grupo": "C"
+    },
+    "match": {
+      "1": "Marrocos",
+      "2": "Haiti"
+    },
+    "resultados": {
+      "1": null,
+      "2": null,
+      "vencedor": null
+    }
+  },
+  {
+    "id": 52,
+    "id_oficial": 537343,
+    "local": "Miami/EUA",
+    "data": "2026-06-24T19:00:00-03:00",
+    "rodada": {
+      "fase": "GROUP_STAGE",
+      "numero_jogo": 52,
+      "nome_rodada": "RODADA_3",
+      "grupo": "C"
+    },
+    "match": {
+      "1": "Escócia",
+      "2": "Brasil"
+    },
+    "resultados": {
+      "1": null,
+      "2": null,
+      "vencedor": null
+    }
+  },
+  {
+    "id": 53,
+    "id_oficial": 537331,
+    "local": "Cidade do México/México",
+    "data": "2026-06-24T22:00:00-03:00",
+    "rodada": {
+      "fase": "GROUP_STAGE",
+      "numero_jogo": 53,
+      "nome_rodada": "RODADA_3",
+      "grupo": "A"
+    },
+    "match": {
+      "1": "República Tcheca",
+      "2": "México"
+    },
+    "resultados": {
+      "1": null,
+      "2": null,
+      "vencedor": null
+    }
+  },
+  {
+    "id": 54,
+    "id_oficial": 537332,
+    "local": "Monterrey/México",
+    "data": "2026-06-24T22:00:00-03:00",
+    "rodada": {
+      "fase": "GROUP_STAGE",
+      "numero_jogo": 54,
+      "nome_rodada": "RODADA_3",
+      "grupo": "A"
+    },
+    "match": {
+      "1": "África do Sul",
+      "2": "Coreia do Sul"
+    },
+    "resultados": {
+      "1": null,
+      "2": null,
+      "vencedor": null
+    }
+  },
+  {
+    "id": 55,
+    "id_oficial": 537355,
+    "local": "Nova York e Nova Jersey/EUA",
+    "data": "2026-06-25T17:00:00-03:00",
+    "rodada": {
+      "fase": "GROUP_STAGE",
+      "numero_jogo": 55,
+      "nome_rodada": "RODADA_3",
+      "grupo": "E"
+    },
+    "match": {
+      "1": "Equador",
+      "2": "Alemanha"
+    },
+    "resultados": {
+      "1": null,
+      "2": null,
+      "vencedor": null
+    }
+  },
+  {
+    "id": 56,
+    "id_oficial": 537356,
+    "local": "Filadélfia/EUA",
+    "data": "2026-06-25T17:00:00-03:00",
+    "rodada": {
+      "fase": "GROUP_STAGE",
+      "numero_jogo": 56,
+      "nome_rodada": "RODADA_3",
+      "grupo": "E"
+    },
+    "match": {
+      "1": "Curaçao",
+      "2": "Costa do Marfim"
+    },
+    "resultados": {
+      "1": null,
+      "2": null,
+      "vencedor": null
+    }
+  },
+  {
+    "id": 57,
+    "id_oficial": 537361,
+    "local": "Kansas City/EUA",
+    "data": "2026-06-25T20:00:00-03:00",
+    "rodada": {
+      "fase": "GROUP_STAGE",
+      "numero_jogo": 57,
+      "nome_rodada": "RODADA_3",
+      "grupo": "F"
+    },
+    "match": {
+      "1": "Tunísia",
+      "2": "Holanda"
+    },
+    "resultados": {
+      "1": null,
+      "2": null,
+      "vencedor": null
+    }
+  },
+  {
+    "id": 58,
+    "id_oficial": 537362,
+    "local": "Dallas/EUA",
+    "data": "2026-06-25T20:00:00-03:00",
+    "rodada": {
+      "fase": "GROUP_STAGE",
+      "numero_jogo": 58,
+      "nome_rodada": "RODADA_3",
+      "grupo": "F"
+    },
+    "match": {
+      "1": "Japão",
+      "2": "Suécia"
+    },
+    "resultados": {
+      "1": null,
+      "2": null,
+      "vencedor": null
+    }
+  },
+  {
+    "id": 59,
+    "id_oficial": 537349,
+    "local": "Los Angeles/EUA",
+    "data": "2026-06-25T23:00:00-03:00",
+    "rodada": {
+      "fase": "GROUP_STAGE",
+      "numero_jogo": 59,
+      "nome_rodada": "RODADA_3",
+      "grupo": "D"
+    },
+    "match": {
+      "1": "Turquia",
+      "2": "Estados Unidos"
+    },
+    "resultados": {
+      "1": null,
+      "2": null,
+      "vencedor": null
+    }
+  },
+  {
+    "id": 60,
+    "id_oficial": 537350,
+    "local": "Santa Clara/EUA",
+    "data": "2026-06-25T23:00:00-03:00",
+    "rodada": {
+      "fase": "GROUP_STAGE",
+      "numero_jogo": 60,
+      "nome_rodada": "RODADA_3",
+      "grupo": "D"
+    },
+    "match": {
+      "1": "Paraguai",
+      "2": "Austrália"
+    },
+    "resultados": {
+      "1": null,
+      "2": null,
+      "vencedor": null
+    }
+  },
+  {
+    "id": 61,
+    "id_oficial": 537395,
+    "local": "Boston/EUA",
+    "data": "2026-06-26T16:00:00-03:00",
+    "rodada": {
+      "fase": "GROUP_STAGE",
+      "numero_jogo": 61,
+      "nome_rodada": "RODADA_3",
+      "grupo": "I"
+    },
+    "match": {
+      "1": "Noruega",
+      "2": "França"
+    },
+    "resultados": {
+      "1": null,
+      "2": null,
+      "vencedor": null
+    }
+  },
+  {
+    "id": 62,
+    "id_oficial": 537396,
+    "local": "Toronto/Canadá",
+    "data": "2026-06-26T16:00:00-03:00",
+    "rodada": {
+      "fase": "GROUP_STAGE",
+      "numero_jogo": 62,
+      "nome_rodada": "RODADA_3",
+      "grupo": "I"
+    },
+    "match": {
+      "1": "Senegal",
+      "2": "Iraque"
+    },
+    "resultados": {
+      "1": null,
+      "2": null,
+      "vencedor": null
+    }
+  },
+  {
+    "id": 63,
+    "id_oficial": 537373,
+    "local": "Houston/EUA",
+    "data": "2026-06-26T21:00:00-03:00",
+    "rodada": {
+      "fase": "GROUP_STAGE",
+      "numero_jogo": 63,
+      "nome_rodada": "RODADA_3",
+      "grupo": "H"
+    },
+    "match": {
+      "1": "Uruguai",
+      "2": "Espanha"
+    },
+    "resultados": {
+      "1": null,
+      "2": null,
+      "vencedor": null
+    }
+  },
+  {
+    "id": 64,
+    "id_oficial": 537374,
+    "local": "Guadalajara/México",
+    "data": "2026-06-26T21:00:00-03:00",
+    "rodada": {
+      "fase": "GROUP_STAGE",
+      "numero_jogo": 64,
+      "nome_rodada": "RODADA_3",
+      "grupo": "H"
+    },
+    "match": {
+      "1": "Cabo Verde",
+      "2": "Arábia Saudita"
+    },
+    "resultados": {
+      "1": null,
+      "2": null,
+      "vencedor": null
+    }
+  },
+  {
+    "id": 65,
+    "id_oficial": 537367,
+    "local": "Vancouver/Canadá",
+    "data": "2026-06-27T00:00:00-03:00",
+    "rodada": {
+      "fase": "GROUP_STAGE",
+      "numero_jogo": 65,
+      "nome_rodada": "RODADA_3",
+      "grupo": "G"
+    },
+    "match": {
+      "1": "Nova Zelândia",
+      "2": "Bélgica"
+    },
+    "resultados": {
+      "1": null,
+      "2": null,
+      "vencedor": null
+    }
+  },
+  {
+    "id": 66,
+    "id_oficial": 537368,
+    "local": "Seattle/EUA",
+    "data": "2026-06-27T00:00:00-03:00",
+    "rodada": {
+      "fase": "GROUP_STAGE",
+      "numero_jogo": 66,
+      "nome_rodada": "RODADA_3",
+      "grupo": "G"
+    },
+    "match": {
+      "1": "Egito",
+      "2": "Irã"
+    },
+    "resultados": {
+      "1": null,
+      "2": null,
+      "vencedor": null
+    }
+  },
+  {
+    "id": 67,
+    "id_oficial": 537413,
+    "local": "Nova York e Nova Jersey/EUA",
+    "data": "2026-06-27T18:00:00-03:00",
+    "rodada": {
+      "fase": "GROUP_STAGE",
+      "numero_jogo": 67,
+      "nome_rodada": "RODADA_3",
+      "grupo": "L"
+    },
+    "match": {
+      "1": "Panamá",
+      "2": "Inglaterra"
+    },
+    "resultados": {
+      "1": null,
+      "2": null,
+      "vencedor": null
+    }
+  },
+  {
+    "id": 68,
+    "id_oficial": 537414,
+    "local": "Filadélfia/EUA",
+    "data": "2026-06-27T18:00:00-03:00",
+    "rodada": {
+      "fase": "GROUP_STAGE",
+      "numero_jogo": 68,
+      "nome_rodada": "RODADA_3",
+      "grupo": "L"
+    },
+    "match": {
+      "1": "Croácia",
+      "2": "Gana"
+    },
+    "resultados": {
+      "1": null,
+      "2": null,
+      "vencedor": null
+    }
+  },
+  {
+    "id": 69,
+    "id_oficial": 537407,
+    "local": "Miami/EUA",
+    "data": "2026-06-27T20:30:00-03:00",
+    "rodada": {
+      "fase": "GROUP_STAGE",
+      "numero_jogo": 69,
+      "nome_rodada": "RODADA_3",
+      "grupo": "K"
+    },
+    "match": {
+      "1": "Colômbia",
+      "2": "Portugal"
+    },
+    "resultados": {
+      "1": null,
+      "2": null,
+      "vencedor": null
+    }
+  },
+  {
+    "id": 70,
+    "id_oficial": 537408,
+    "local": "Atlanta/EUA",
+    "data": "2026-06-27T20:30:00-03:00",
+    "rodada": {
+      "fase": "GROUP_STAGE",
+      "numero_jogo": 70,
+      "nome_rodada": "RODADA_3",
+      "grupo": "K"
+    },
+    "match": {
+      "1": "República Democrática do Congo",
+      "2": "Uzbequistão"
+    },
+    "resultados": {
+      "1": null,
+      "2": null,
+      "vencedor": null
+    }
+  },
+  {
+    "id": 71,
+    "id_oficial": 537401,
+    "local": "Dallas/EUA",
+    "data": "2026-06-27T23:00:00-03:00",
+    "rodada": {
+      "fase": "GROUP_STAGE",
+      "numero_jogo": 71,
+      "nome_rodada": "RODADA_3",
+      "grupo": "J"
+    },
+    "match": {
+      "1": "Jordânia",
+      "2": "Argentina"
+    },
+    "resultados": {
+      "1": null,
+      "2": null,
+      "vencedor": null
+    }
+  },
+  {
+    "id": 72,
+    "id_oficial": 537402,
+    "local": "Kansas City/EUA",
+    "data": "2026-06-27T23:00:00-03:00",
+    "rodada": {
+      "fase": "GROUP_STAGE",
+      "numero_jogo": 72,
+      "nome_rodada": "RODADA_3",
+      "grupo": "J"
+    },
+    "match": {
+      "1": "Argélia",
+      "2": "Áustria"
+    },
+    "resultados": {
+      "1": null,
+      "2": null,
+      "vencedor": null
+    }
+  },
+  {
+    "id": 73,
+    "id_oficial": 537417,
+    "local": "Los Angeles/EUA",
+    "data": "2026-06-28T16:00:00-03:00",
+    "rodada": {
+      "fase": "LAST_32",
+      "numero_jogo": 73,
+      "nome_rodada": null,
+      "grupo": null
+    },
+    "match": {
+      "1": "2_GRUPO_A",
+      "2": "2_GRUPO_B"
+    },
+    "resultados": {
+      "1": null,
+      "2": null,
+      "vencedor": null
+    }
+  },
+  {
+    "id": 74,
+    "id_oficial": 537423,
+    "local": "Boston/EUA",
+    "data": "2026-06-29T17:30:00-03:00",
+    "rodada": {
+      "fase": "LAST_32",
+      "numero_jogo": 74,
+      "nome_rodada": null,
+      "grupo": null
+    },
+    "match": {
+      "1": "1_GRUPO_E",
+      "2": "3_GRUPOS_A/B/C/D/F"
+    },
+    "resultados": {
+      "1": null,
+      "2": null,
+      "vencedor": null
+    }
+  },
+  {
+    "id": 75,
+    "id_oficial": 537415,
+    "local": "Monterrey/México",
+    "data": "2026-06-29T22:00:00-03:00",
+    "rodada": {
+      "fase": "LAST_32",
+      "numero_jogo": 75,
+      "nome_rodada": null,
+      "grupo": null
+    },
+    "match": {
+      "1": "1_GRUPO_F",
+      "2": "2_GRUPO_C"
+    },
+    "resultados": {
+      "1": null,
+      "2": null,
+      "vencedor": null
+    }
+  },
+  {
+    "id": 76,
+    "id_oficial": 537418,
+    "local": "Houston/EUA",
+    "data": "2026-06-29T14:00:00-03:00",
+    "rodada": {
+      "fase": "LAST_32",
+      "numero_jogo": 76,
+      "nome_rodada": null,
+      "grupo": null
+    },
+    "match": {
+      "1": "1_GRUPO_C",
+      "2": "2_GRUPO_F"
+    },
+    "resultados": {
+      "1": null,
+      "2": null,
+      "vencedor": null
+    }
+  },
+  {
+    "id": 77,
+    "id_oficial": 537424,
+    "local": "Nova York e Nova Jersey/EUA",
+    "data": "2026-06-30T18:00:00-03:00",
+    "rodada": {
+      "fase": "LAST_32",
+      "numero_jogo": 77,
+      "nome_rodada": null,
+      "grupo": null
+    },
+    "match": {
+      "1": "1_GRUPO_I",
+      "2": "3_GRUPOS_C/D/F/G/H"
+    },
+    "resultados": {
+      "1": null,
+      "2": null,
+      "vencedor": null
+    }
+  },
+  {
+    "id": 78,
+    "id_oficial": 537416,
+    "local": "Dallas/EUA",
+    "data": "2026-06-30T14:00:00-03:00",
+    "rodada": {
+      "fase": "LAST_32",
+      "numero_jogo": 78,
+      "nome_rodada": null,
+      "grupo": null
+    },
+    "match": {
+      "1": "2_GRUPO_E",
+      "2": "2_GRUPO_I"
+    },
+    "resultados": {
+      "1": null,
+      "2": null,
+      "vencedor": null
+    }
+  },
+  {
+    "id": 79,
+    "id_oficial": 537425,
+    "local": "Cidade do México/México",
+    "data": "2026-06-30T22:00:00-03:00",
+    "rodada": {
+      "fase": "LAST_32",
+      "numero_jogo": 79,
+      "nome_rodada": null,
+      "grupo": null
+    },
+    "match": {
+      "1": "1_GRUPO_A",
+      "2": "3_GRUPOS_C/E/F/H/I"
+    },
+    "resultados": {
+      "1": null,
+      "2": null,
+      "vencedor": null
+    }
+  },
+  {
+    "id": 80,
+    "id_oficial": 537426,
+    "local": "Atlanta/EUA",
+    "data": "2026-07-01T13:00:00-03:00",
+    "rodada": {
+      "fase": "LAST_32",
+      "numero_jogo": 80,
+      "nome_rodada": null,
+      "grupo": null
+    },
+    "match": {
+      "1": "1_GRUPO_L",
+      "2": "3_GRUPOS_E/H/I/J/K"
+    },
+    "resultados": {
+      "1": null,
+      "2": null,
+      "vencedor": null
+    }
+  },
+  {
+    "id": 81,
+    "id_oficial": 537422,
+    "local": "Santa Clara/EUA",
+    "data": "2026-07-01T21:00:00-03:00",
+    "rodada": {
+      "fase": "LAST_32",
+      "numero_jogo": 81,
+      "nome_rodada": null,
+      "grupo": null
+    },
+    "match": {
+      "1": "1_GRUPO_D",
+      "2": "3_GRUPOS_B/E/F/I/J"
+    },
+    "resultados": {
+      "1": null,
+      "2": null,
+      "vencedor": null
+    }
+  },
+  {
+    "id": 82,
+    "id_oficial": 537421,
+    "local": "Seattle/EUA",
+    "data": "2026-07-01T17:00:00-03:00",
+    "rodada": {
+      "fase": "LAST_32",
+      "numero_jogo": 82,
+      "nome_rodada": null,
+      "grupo": null
+    },
+    "match": {
+      "1": "1_GRUPO_G",
+      "2": "3_GRUPOS_A/E/H/I/J"
+    },
+    "resultados": {
+      "1": null,
+      "2": null,
+      "vencedor": null
+    }
+  },
+  {
+    "id": 83,
+    "id_oficial": 537420,
+    "local": "Toronto/Canadá",
+    "data": "2026-07-02T20:00:00-03:00",
+    "rodada": {
+      "fase": "LAST_32",
+      "numero_jogo": 83,
+      "nome_rodada": null,
+      "grupo": null
+    },
+    "match": {
+      "1": "2_GRUPO_K",
+      "2": "2_GRUPO_L"
+    },
+    "resultados": {
+      "1": null,
+      "2": null,
+      "vencedor": null
+    }
+  },
+  {
+    "id": 84,
+    "id_oficial": 537419,
+    "local": "Los Angeles/EUA",
+    "data": "2026-07-02T16:00:00-03:00",
+    "rodada": {
+      "fase": "LAST_32",
+      "numero_jogo": 84,
+      "nome_rodada": null,
+      "grupo": null
+    },
+    "match": {
+      "1": "1_GRUPO_H",
+      "2": "2_GRUPO_J"
+    },
+    "resultados": {
+      "1": null,
+      "2": null,
+      "vencedor": null
+    }
+  },
+  {
+    "id": 85,
+    "id_oficial": 537429,
+    "local": "Vancouver/Canadá",
+    "data": "2026-07-03T00:00:00-03:00",
+    "rodada": {
+      "fase": "LAST_32",
+      "numero_jogo": 85,
+      "nome_rodada": null,
+      "grupo": null
+    },
+    "match": {
+      "1": "1_GRUPO_B",
+      "2": "3_GRUPOS_E/F/G/I/J"
+    },
+    "resultados": {
+      "1": null,
+      "2": null,
+      "vencedor": null
+    }
+  },
+  {
+    "id": 86,
+    "id_oficial": 537428,
+    "local": "Miami/EUA",
+    "data": "2026-07-03T19:00:00-03:00",
+    "rodada": {
+      "fase": "LAST_32",
+      "numero_jogo": 86,
+      "nome_rodada": null,
+      "grupo": null
+    },
+    "match": {
+      "1": "1_GRUPO_J",
+      "2": "2_GRUPO_H"
+    },
+    "resultados": {
+      "1": null,
+      "2": null,
+      "vencedor": null
+    }
+  },
+  {
+    "id": 87,
+    "id_oficial": 537427,
+    "local": "Kansas City/EUA",
+    "data": "2026-07-03T22:30:00-03:00",
+    "rodada": {
+      "fase": "LAST_32",
+      "numero_jogo": 87,
+      "nome_rodada": null,
+      "grupo": null
+    },
+    "match": {
+      "1": "1_GRUPO_K",
+      "2": "3_GRUPOS_D/E/I/J/L"
+    },
+    "resultados": {
+      "1": null,
+      "2": null,
+      "vencedor": null
+    }
+  },
+  {
+    "id": 88,
+    "id_oficial": 537430,
+    "local": "Dallas/EUA",
+    "data": "2026-07-03T15:00:00-03:00",
+    "rodada": {
+      "fase": "LAST_32",
+      "numero_jogo": 88,
+      "nome_rodada": null,
+      "grupo": null
+    },
+    "match": {
+      "1": "2_GRUPO_D",
+      "2": "2_GRUPO_G"
+    },
+    "resultados": {
+      "1": null,
+      "2": null,
+      "vencedor": null
+    }
+  },
+  {
+    "id": 89,
+    "id_oficial": 537376,
+    "local": "Filadélfia/EUA",
+    "data": "2026-07-04T18:00:00-03:00",
+    "rodada": {
+      "fase": "LAST_16",
+      "numero_jogo": 89,
+      "nome_rodada": null,
+      "grupo": null
+    },
+    "match": {
+      "1": "1_JOGO_74",
+      "2": "1_JOGO_77"
+    },
+    "resultados": {
+      "1": null,
+      "2": null,
+      "vencedor": null
+    }
+  },
+  {
+    "id": 90,
+    "id_oficial": 537375,
+    "local": "Houston/EUA",
+    "data": "2026-07-04T14:00:00-03:00",
+    "rodada": {
+      "fase": "LAST_16",
+      "numero_jogo": 90,
+      "nome_rodada": null,
+      "grupo": null
+    },
+    "match": {
+      "1": "1_JOGO_73",
+      "2": "1_JOGO_75"
+    },
+    "resultados": {
+      "1": null,
+      "2": null,
+      "vencedor": null
+    }
+  },
+  {
+    "id": 91,
+    "id_oficial": 537377,
+    "local": "Nova York e Nova Jersey/EUA",
+    "data": "2026-07-05T17:00:00-03:00",
+    "rodada": {
+      "fase": "LAST_16",
+      "numero_jogo": 91,
+      "nome_rodada": null,
+      "grupo": null
+    },
+    "match": {
+      "1": "1_JOGO_76",
+      "2": "1_JOGO_78"
+    },
+    "resultados": {
+      "1": null,
+      "2": null,
+      "vencedor": null
+    }
+  },
+  {
+    "id": 92,
+    "id_oficial": 537378,
+    "local": "Cidade do México/México",
+    "data": "2026-07-05T21:00:00-03:00",
+    "rodada": {
+      "fase": "LAST_16",
+      "numero_jogo": 92,
+      "nome_rodada": null,
+      "grupo": null
+    },
+    "match": {
+      "1": "1_JOGO_79",
+      "2": "1_JOGO_80"
+    },
+    "resultados": {
+      "1": null,
+      "2": null,
+      "vencedor": null
+    }
+  },
+  {
+    "id": 93,
+    "id_oficial": 537379,
+    "local": "Dallas/EUA",
+    "data": "2026-07-06T16:00:00-03:00",
+    "rodada": {
+      "fase": "LAST_16",
+      "numero_jogo": 93,
+      "nome_rodada": null,
+      "grupo": null
+    },
+    "match": {
+      "1": "1_JOGO_83",
+      "2": "1_JOGO_84"
+    },
+    "resultados": {
+      "1": null,
+      "2": null,
+      "vencedor": null
+    }
+  },
+  {
+    "id": 94,
+    "id_oficial": 537380,
+    "local": "Seattle/EUA",
+    "data": "2026-07-06T21:00:00-03:00",
+    "rodada": {
+      "fase": "LAST_16",
+      "numero_jogo": 94,
+      "nome_rodada": null,
+      "grupo": null
+    },
+    "match": {
+      "1": "1_JOGO_81",
+      "2": "1_JOGO_82"
+    },
+    "resultados": {
+      "1": null,
+      "2": null,
+      "vencedor": null
+    }
+  },
+  {
+    "id": 95,
+    "id_oficial": 537381,
+    "local": "Atlanta/EUA",
+    "data": "2026-07-07T13:00:00-03:00",
+    "rodada": {
+      "fase": "LAST_16",
+      "numero_jogo": 95,
+      "nome_rodada": null,
+      "grupo": null
+    },
+    "match": {
+      "1": "1_JOGO_86",
+      "2": "1_JOGO_88"
+    },
+    "resultados": {
+      "1": null,
+      "2": null,
+      "vencedor": null
+    }
+  },
+  {
+    "id": 96,
+    "id_oficial": 537382,
+    "local": "Vancouver/Canadá",
+    "data": "2026-07-07T17:00:00-03:00",
+    "rodada": {
+      "fase": "LAST_16",
+      "numero_jogo": 96,
+      "nome_rodada": null,
+      "grupo": null
+    },
+    "match": {
+      "1": "1_JOGO_85",
+      "2": "1_JOGO_87"
+    },
+    "resultados": {
+      "1": null,
+      "2": null,
+      "vencedor": null
+    }
+  },
+  {
+    "id": 97,
+    "id_oficial": 537383,
+    "local": "Boston/EUA",
+    "data": "2026-07-09T17:00:00-03:00",
+    "rodada": {
+      "fase": "QUARTER_FINALS",
+      "numero_jogo": 97,
+      "nome_rodada": null,
+      "grupo": null
+    },
+    "match": {
+      "1": "1_JOGO_89",
+      "2": "1_JOGO_90"
+    },
+    "resultados": {
+      "1": null,
+      "2": null,
+      "vencedor": null
+    }
+  },
+  {
+    "id": 98,
+    "id_oficial": 537384,
+    "local": "Los Angeles/EUA",
+    "data": "2026-07-10T16:00:00-03:00",
+    "rodada": {
+      "fase": "QUARTER_FINALS",
+      "numero_jogo": 98,
+      "nome_rodada": null,
+      "grupo": null
+    },
+    "match": {
+      "1": "1_JOGO_93",
+      "2": "1_JOGO_94"
+    },
+    "resultados": {
+      "1": null,
+      "2": null,
+      "vencedor": null
+    }
+  },
+  {
+    "id": 99,
+    "id_oficial": 537385,
+    "local": "Miami/EUA",
+    "data": "2026-07-11T18:00:00-03:00",
+    "rodada": {
+      "fase": "QUARTER_FINALS",
+      "numero_jogo": 99,
+      "nome_rodada": null,
+      "grupo": null
+    },
+    "match": {
+      "1": "1_JOGO_91",
+      "2": "1_JOGO_92"
+    },
+    "resultados": {
+      "1": null,
+      "2": null,
+      "vencedor": null
+    }
+  },
+  {
+    "id": 100,
+    "id_oficial": 537386,
+    "local": "Kansas City/EUA",
+    "data": "2026-07-11T22:00:00-03:00",
+    "rodada": {
+      "fase": "QUARTER_FINALS",
+      "numero_jogo": 100,
+      "nome_rodada": null,
+      "grupo": null
+    },
+    "match": {
+      "1": "1_JOGO_95",
+      "2": "1_JOGO_96"
+    },
+    "resultados": {
+      "1": null,
+      "2": null,
+      "vencedor": null
+    }
+  },
+  {
+    "id": 101,
+    "id_oficial": 537387,
+    "local": "Dallas/EUA",
+    "data": "2026-07-14T16:00:00-03:00",
+    "rodada": {
+      "fase": "SEMI_FINALS",
+      "numero_jogo": 101,
+      "nome_rodada": null,
+      "grupo": null
+    },
+    "match": {
+      "1": "1_JOGO_97",
+      "2": "1_JOGO_98"
+    },
+    "resultados": {
+      "1": null,
+      "2": null,
+      "vencedor": null
+    }
+  },
+  {
+    "id": 102,
+    "id_oficial": 537388,
+    "local": "Atlanta/EUA",
+    "data": "2026-07-15T16:00:00-03:00",
+    "rodada": {
+      "fase": "SEMI_FINALS",
+      "numero_jogo": 102,
+      "nome_rodada": null,
+      "grupo": null
+    },
+    "match": {
+      "1": "1_JOGO_99",
+      "2": "1_JOGO_100"
+    },
+    "resultados": {
+      "1": null,
+      "2": null,
+      "vencedor": null
+    }
+  },
+  {
+    "id": 103,
+    "id_oficial": 537389,
+    "local": "Miami/EUA",
+    "data": "2026-07-18T18:00:00-03:00",
+    "rodada": {
+      "fase": "THIRD_PLACE",
+      "numero_jogo": 103,
+      "nome_rodada": null,
+      "grupo": null
+    },
+    "match": {
+      "1": "PERDEDOR_101",
+      "2": "PERDEDOR_102"
+    },
+    "resultados": {
+      "1": null,
+      "2": null,
+      "vencedor": null
+    }
+  },
+  {
+    "id": 104,
+    "id_oficial": 537390,
+    "local": "Nova York e Nova Jersey/EUA",
+    "data": "2026-07-19T16:00:00-03:00",
+    "rodada": {
+      "fase": "FINAL",
+      "numero_jogo": 104,
+      "nome_rodada": null,
+      "grupo": null
+    },
+    "match": {
+      "1": "1_JOGO_101",
+      "2": "1_JOGO_102"
+    },
+    "resultados": {
+      "1": null,
+      "2": null,
+      "vencedor": null
+    }
+  }
+]

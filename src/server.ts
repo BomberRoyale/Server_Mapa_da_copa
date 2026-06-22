@@ -2,6 +2,7 @@ import { WebSocketServer, WebSocket } from 'ws';
 import Socket2 from "./core/socket2";
 import Chamadas from "./chamadas/inicial";
 import { gerenciadorConexoes } from './core/gerenciadorConexoes';
+import { iniciarMotorDaCopa } from './apiJogo/API-Jogo-AoVivo';
 
 import { db } from './firebaseConfig';
 
@@ -81,6 +82,9 @@ const socketPort = 5002;
 
 const server = new WebSocketServer({ port: socketPort }, () => {
     console.log(`Servidor pronto na porta ${socketPort}`);
+    
+    // Iniciando APIdaCopa
+    iniciarMotorDaCopa();
 });
 
 server.on('connection', (ws: WebSocket) => {
@@ -101,6 +105,10 @@ server.on('connection', (ws: WebSocket) => {
 
     socket.on('LISTAR_SIMULACOES', (event) => {
     chamadas.sumulacaoCopa.listarSimulacoes(event, socket);
+    });
+
+    socket.on("SINCRONIZAR_TABELA", (event) => {
+        chamadas.sincronizacao.checarTabela(event, socket);
     });
 
 
