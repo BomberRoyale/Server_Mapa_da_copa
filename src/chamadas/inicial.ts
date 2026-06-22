@@ -6,6 +6,12 @@ import * as fs from 'fs';
 
 const dao = new Dao();
 
+// 🔥 CONFIGURAÇÕES DE DIRETÓRIO E ARQUIVOS
+const PASTA_DADOS = 'database/';
+const ARQUIVO_OFICIAL = PASTA_DADOS + 'API_oficial_copa-2026.json';
+const ARQUIVO_AO_VIVO = PASTA_DADOS + 'placares_ao_vivo.json';
+const ARQUIVO_VERSAO = PASTA_DADOS + 'versao_tabela.json';
+
 
 export default class Chamadas {
 
@@ -134,31 +140,36 @@ export default class Chamadas {
             const versaoLocalCliente = dados.versaoTabela || 0;
 
             try {
-                // 1. Lê a versão oficial que o Vigia Master gerou
-                const versaoServerInfo = JSON.parse(fs.readFileSync('versao_tabela.json', 'utf-8'));
-                const versaoServidor = versaoServerInfo.versao;
+                let versaoServidor = 0;
+                
+                // 1. Lê a versão oficial usando a constante
+                try {
+                    const versaoServerInfo = JSON.parse(fs.readFileSync(ARQUIVO_VERSAO, 'utf-8'));
+                    versaoServidor = versaoServerInfo.versao;
+                } catch (erro) {
+                    console.log("ℹ️ Tabela de versão ainda não gerada pelo Vigia. Assumindo versão padrão.");
+                }
 
                 // 2. Compara as versões
                 if (versaoLocalCliente < versaoServidor) {
                     console.log(`📥 Usuário [${socket.id || 'Anonimo'}] desatualizado. Enviando nova Tabela Oficial...`);
 
-                    // Cliente desatualizado! Lemos o arquivo completo de 40kb
-                    const tabelaCompleta = JSON.parse(fs.readFileSync('API_oficial_copa-2026.json', 'utf-8'));
+                    // Lemos o arquivo completo usando a constante
+                    const tabelaCompleta = JSON.parse(fs.readFileSync(ARQUIVO_OFICIAL, 'utf-8'));
 
-                    // Respondemos entregando a versão nova e a tabela completa
                     socket.emit('SINCRONIZAR_TABELA', IBD.criarPayload("AtualizacaoNecessaria", true, {
                         versao: versaoServidor,
                         tabela: tabelaCompleta
                     }));
                 } else {
-                    // O cliente já tem a versão mais recente, não precisa gastar banda mandando a tabela
                     console.log(`✅ Usuário [${socket.id || 'Anonimo'}] já está com a tabela atualizada.`);
 
                     socket.emit('SINCRONIZAR_TABELA', IBD.criarPayload("TabelaAtualizada", true, {
                         versao: versaoServidor
                     }));
                 }
-                //Placar ao vivo
+                
+                // Placar ao vivo
                 this.enviarPlacarAoVivo(socket);
                 
             } catch (e) {
@@ -166,16 +177,16 @@ export default class Chamadas {
                 socket.emit('SINCRONIZAR_TABELA', IBD.criarPayload("ErroServidor", false, "Falha ao ler arquivos do servidor."));
             }
         },
+        
         enviarPlacarAoVivo(socket: Socket2) {
             try {
-                // Verifica se o arquivo físico do Radar existe
-                if (fs.existsSync('placares_ao_vivo.json')) {
-                    const dadosAoVivo = fs.readFileSync('placares_ao_vivo.json', 'utf-8');
+                // Verifica existência e lê usando a constante
+                if (fs.existsSync(ARQUIVO_AO_VIVO)) {
+                    const dadosAoVivo = fs.readFileSync(ARQUIVO_AO_VIVO, 'utf-8');
                     const placares = JSON.parse(dadosAoVivo);
 
                     if (placares.length > 0) {
                         console.log(`⚽ Jogo rolando! Sincronizando placar ao vivo para [${socket.id}]`);
-
                         socket.emit('SINCRONIZAR_AO_VIVO', IBD.criarPayload("PlacarAtual", true, placares));
                     }
                 }
