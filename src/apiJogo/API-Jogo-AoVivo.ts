@@ -1,10 +1,11 @@
+import 'dotenv/config';
 import cron from 'node-cron';
 import * as fs from 'fs';
 import { Match, ApiResponse } from './interfaceAPI';
 import { dicionarioTimes } from './dicionarioTimes';
 import { gerenciadorConexoes } from '../core/gerenciadorConexoes';
 
-const MEU_TOKEN: string = 'cdca2359edc14f5b95097665f37b2f77';
+const MEU_TOKEN: string = process.env.TOKEN_FOOTBALL_DATA || '';
 const ID_COMPETICAO: string = 'WC';
 const TEMPO_ATUALIZACAO_RADAR: number = 60000; // 1 minuto
 
