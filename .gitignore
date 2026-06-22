@@ -8,7 +8,6 @@ firebase-key.json
 
 # Arquivos dinâmicos gerados pelo servidor e banco de dados
 database/placares_ao_vivo.json
-database/versao_tabela.json
 
 # Arquivos de backup
 *V0.0.json
