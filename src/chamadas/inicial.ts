@@ -49,6 +49,7 @@ export default class Chamadas {
 
                     // Validando se já está online
                     if (gerenciadorConexoes.verificarOnline(socket.id)) {
+                        console.log("Usuário já conectado, erro!");
                         socket.emit(dados.ev, IBD.criarPayload("DuploLogin", false, "Você já está conectado em outro dispositivo."));
                         return;
                     }
