@@ -37,6 +37,14 @@ export default class Chamadas {
         checarUid(dados: any, socket: Socket2) {
             dao.checaUsuario.verificaUid(dados.token)
                 .then(async (result) => {
+                    //Caso Token seja inválido ou vencido
+                    if (result && (result as any).mensagem === "ERRO_TOKEN_EXPIRADO") {
+                        console.log(`Bloqueando conexão: Token expirado para o socket ${socket.id}`);
+                        socket.emit('UID', IBD.criarPayload("ERRO_TOKEN_EXPIRADO", false, "Seu acesso expirou."));
+                        socket.destroy();
+                        return;
+                    }
+
                     // Salvando para poder acessar depois
                     socket.id = result?.username;
 
@@ -141,7 +149,7 @@ export default class Chamadas {
 
             try {
                 let versaoServidor = 0;
-                
+
                 // 1. Lê a versão oficial usando a constante
                 try {
                     const versaoServerInfo = JSON.parse(fs.readFileSync(ARQUIVO_VERSAO, 'utf-8'));
@@ -168,16 +176,16 @@ export default class Chamadas {
                         versao: versaoServidor
                     }));
                 }
-                
+
                 // Placar ao vivo
                 this.enviarPlacarAoVivo(socket);
-                
+
             } catch (e) {
                 console.error("❌ Erro ao checar versão da tabela:", e);
                 socket.emit('SINCRONIZAR_TABELA', IBD.criarPayload("ErroServidor", false, "Falha ao ler arquivos do servidor."));
             }
         },
-        
+
         enviarPlacarAoVivo(socket: Socket2) {
             try {
                 // Verifica existência e lê usando a constante
