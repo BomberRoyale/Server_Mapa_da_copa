@@ -40,8 +40,7 @@ export default class Chamadas {
                     //Caso Token seja inválido ou vencido
                     if (result && (result as any).mensagem === "ERRO_TOKEN_EXPIRADO") {
                         console.log(`Bloqueando conexão: Token expirado para o socket ${socket.id}`);
-                        socket.emit('UID', IBD.criarPayload("ERRO_TOKEN_EXPIRADO", false, "Seu acesso expirou."));
-                        socket.destroy();
+                        socket.emit(dados.ev, IBD.criarPayload("ERRO_TOKEN_EXPIRADO", false, "Seu acesso expirou."));
                         return;
                     }
 
