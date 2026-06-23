@@ -834,9 +834,9 @@
       "2": "Egito"
     },
     "resultados": {
-      "1": null,
-      "2": null,
-      "vencedor": null
+      "1": 1,
+      "2": 3,
+      "vencedor": "AWAY_TEAM"
     }
   },
   {
@@ -855,9 +855,9 @@
       "2": "Áustria"
     },
     "resultados": {
-      "1": null,
-      "2": null,
-      "vencedor": null
+      "1": 2,
+      "2": 0,
+      "vencedor": "HOME_TEAM"
     }
   },
   {
@@ -876,9 +876,9 @@
       "2": "Iraque"
     },
     "resultados": {
-      "1": null,
-      "2": null,
-      "vencedor": null
+      "1": 3,
+      "2": 0,
+      "vencedor": "HOME_TEAM"
     }
   },
   {
@@ -897,9 +897,9 @@
       "2": "Senegal"
     },
     "resultados": {
-      "1": null,
-      "2": null,
-      "vencedor": null
+      "1": 3,
+      "2": 2,
+      "vencedor": "HOME_TEAM"
     }
   },
   {
@@ -918,9 +918,9 @@
       "2": "Argélia"
     },
     "resultados": {
-      "1": null,
-      "2": null,
-      "vencedor": null
+      "1": 1,
+      "2": 2,
+      "vencedor": "AWAY_TEAM"
     }
   },
   {

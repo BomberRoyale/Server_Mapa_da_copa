@@ -204,6 +204,9 @@ export default class Chamadas {
                         console.log(`⚽ Jogo rolando! Sincronizando placar ao vivo para [${socket.id}]`);
                         socket.emit('SINCRONIZAR_AO_VIVO', IBD.criarPayload("PlacarAtual", true, placares));
                     }
+                    else{
+                        socket.emit('SINCRONIZAR_AO_VIVO', IBD.criarPayload("DeligarPlacar", true, placares));
+                    }
                 }
             } catch (e) {
                 console.error("❌ Erro ao tentar ler o placar ao vivo para novo usuário:", e);
