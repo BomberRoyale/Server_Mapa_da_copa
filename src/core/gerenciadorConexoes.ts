@@ -10,12 +10,28 @@ class GerenciadorConexoes {
         console.log(`📡 Usuário [${uid}] conectado. Total online: ${this.totalOnline()}`);
     }
     
-    public remover(uid: string): void {
-        if (this.conexoesAtivas.has(uid)) {
+    // public remover(uid: string): void {
+    //     if (this.conexoesAtivas.has(uid)) {
+    //         this.conexoesAtivas.delete(uid);
+    //         console.log(`🧹 Usuário [${uid}] desconectou. Memória limpa. Total online: ${this.totalOnline()}`);
+    //     }
+    // }
+
+    public remover(uid: string, socket: any): void {
+    if (this.conexoesAtivas.has(uid)) {
+        // Pega o socket que está oficialmente salvo na memória neste exato milissegundo
+        const socketOficialNaMemoria = this.conexoesAtivas.get(uid);
+
+        // A TRAVA DE SEGURANÇA: Só remove se o que está saindo for o oficial
+        if (socketOficialNaMemoria === socket) {
             this.conexoesAtivas.delete(uid);
             console.log(`🧹 Usuário [${uid}] desconectou. Memória limpa. Total online: ${this.totalOnline()}`);
+        } else {
+            // Se não for igual, é o "suspiro" da conexão velha caindo atrasada
+            console.log(`👻 Ignorando desconexão fantasma de [${uid}]. A nova conexão já assumiu!`);
         }
     }
+}
     
     public obterConexao(uid: string): Socket2 | undefined {
         return this.conexoesAtivas.get(uid);

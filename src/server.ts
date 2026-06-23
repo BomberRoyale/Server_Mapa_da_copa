@@ -114,7 +114,7 @@ server.on('connection', (ws: WebSocket) => {
 
     socket.on('disconnect', () => {
         if (socket.id) {
-            gerenciadorConexoes.remover(socket.id);            
+            gerenciadorConexoes.remover(socket.id, socket);            
             console.log(`Usuário [${socket.id}] desconectado.`);
         } else {
             console.log("Usuário Anônimo desconectou antes de logar.");
