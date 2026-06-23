@@ -47,21 +47,12 @@ export default class Chamadas {
                     // Salvando para poder acessar depois
                     socket.id = result?.username;
 
-                    // Validando se já está online
-                    // if (gerenciadorConexoes.verificarOnline(socket.id)) {
-                    //     console.log("Usuário já conectado, erro!");
-                    //     socket.emit(dados.ev, IBD.criarPayload("DuploLogin", false, "Você já está conectado em outro dispositivo."));
-                    //     socket.destroy();
-                    //     return;
-                    // }
-
                     if (gerenciadorConexoes.verificarOnline(socket.id)) {
                         console.log(`🔄 Troca de rede detectada para [${socket.id}]. Substituindo pela nova conexão...`);
 
                         const socketAntigo = gerenciadorConexoes.obterConexao(socket.id);
 
                         if (socketAntigo) {
-                            // Mata a conexão velha
                             if (typeof socketAntigo.destroy === 'function') {
                                 socketAntigo.destroy();
                             } else if (typeof (socketAntigo as any).close === 'function') {
