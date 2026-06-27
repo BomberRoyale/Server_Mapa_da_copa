@@ -274,6 +274,14 @@ async function vigiaMaster(forcarAtualizacao: boolean = false): Promise<void> {
     const dadosGlobais = await buscarBaseAbertaGithub();
     // fs.writeFileSync('regras-copa-2026_API_26-06_0', JSON.stringify(dadosGlobais, null, 2));
 
+    //const dadosCompletos = await buscarNaApi('');
+    // fs.writeFileSync('regras-copa-2026_API_26-06_0', JSON.stringify(dados2, null, 2));
+
+    // if (!dadosCompletos || !dadosCompletos.matches) {
+    //     console.log("❌ Falha ao buscar dados da API da Football-Data.");
+    //     return;
+    // }
+
     // 2. ROTA FRESCA (Sem cache! Traz o status real do jogo de hoje)
     const dataAtual = new Date();
     const dataOntem = new Date(dataAtual); dataOntem.setDate(dataOntem.getDate() - 1);
@@ -291,7 +299,9 @@ async function vigiaMaster(forcarAtualizacao: boolean = false): Promise<void> {
     baseLocal.forEach((jogoLocal: any) => {
         if (!jogoLocal.id_oficial) return;
 
-        const jogoFresco = dadosHoje.matches.find((j: Match) => j.id === jogoLocal.id_oficial);        
+        const jogoFresco = dadosHoje.matches.find((j: Match) => j.id === jogoLocal.id_oficial);   
+        
+        // const jogoFresco = dadosCompletos.matches.find((j: Match) => j.id === jogoLocal.id_oficial);
 
         // ==========================================
         // A) LÓGICA DE JOGOS E PLACARES FINAIS (Confia apenas no jogoFresco)

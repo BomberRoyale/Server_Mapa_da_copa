@@ -939,9 +939,9 @@
       "2": "Uzbequistão"
     },
     "resultados": {
-      "1": null,
-      "2": null,
-      "vencedor": null
+      "1": 5,
+      "2": 0,
+      "vencedor": "HOME_TEAM"
     }
   },
   {
@@ -960,9 +960,9 @@
       "2": "Gana"
     },
     "resultados": {
-      "1": null,
-      "2": null,
-      "vencedor": null
+      "1": 0,
+      "2": 0,
+      "vencedor": "DRAW"
     }
   },
   {
@@ -981,9 +981,9 @@
       "2": "Croácia"
     },
     "resultados": {
-      "1": null,
-      "2": null,
-      "vencedor": null
+      "1": 0,
+      "2": 1,
+      "vencedor": "AWAY_TEAM"
     }
   },
   {
@@ -1002,9 +1002,9 @@
       "2": "República Democrática do Congo"
     },
     "resultados": {
-      "1": null,
-      "2": null,
-      "vencedor": null
+      "1": 1,
+      "2": 0,
+      "vencedor": "HOME_TEAM"
     }
   },
   {
@@ -1023,9 +1023,9 @@
       "2": "Canadá"
     },
     "resultados": {
-      "1": null,
-      "2": null,
-      "vencedor": null
+      "1": 2,
+      "2": 1,
+      "vencedor": "HOME_TEAM"
     }
   },
   {
@@ -1044,9 +1044,9 @@
       "2": "Catar"
     },
     "resultados": {
-      "1": null,
-      "2": null,
-      "vencedor": null
+      "1": 3,
+      "2": 1,
+      "vencedor": "HOME_TEAM"
     }
   },
   {
@@ -1065,9 +1065,9 @@
       "2": "Haiti"
     },
     "resultados": {
-      "1": null,
-      "2": null,
-      "vencedor": null
+      "1": 4,
+      "2": 2,
+      "vencedor": "HOME_TEAM"
     }
   },
   {
@@ -1086,9 +1086,9 @@
       "2": "Brasil"
     },
     "resultados": {
-      "1": null,
-      "2": null,
-      "vencedor": null
+      "1": 0,
+      "2": 3,
+      "vencedor": "AWAY_TEAM"
     }
   },
   {
