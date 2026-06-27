@@ -31,7 +31,7 @@ async function buscarJogosDaCopa() {
         console.log("✅ Dados recebidos com sucesso!");
         //console.log(JSON.stringify(dadosJson, null, 2));
 
-        const nomeDoArquivo = 'regras-copa-2026_API.json';
+        const nomeDoArquivo = 'regras-copa-2026_API_26-06.json';
         sistemaDeArquivos.writeFileSync(nomeDoArquivo, JSON.stringify(dadosJson, null, 2));
         
 

@@ -56,7 +56,8 @@ function extrairResultadosAoVivo(dadosBrutos: ApiResponse, jogosAtivos: Set<numb
             const jogoLocal = baseLocal.find((j: any) => j.id_oficial === jogo.id);
 
             return {
-                id_oficial: jogo.id,
+                // id_oficial: jogo.id,
+                id_oficial: jogoLocal ? jogoLocal.id : null,
                 casa: jogoLocal ? jogoLocal.match["1"] : "Casa",
                 visitante: jogoLocal ? jogoLocal.match["2"] : "Visitante",
                 resultados: {
@@ -113,6 +114,18 @@ async function buscarNaApi(filtros: string = '', tentativasMaximas: number = 3):
     return null;
 }
 
+async function buscarBaseAbertaGithub(): Promise<any | null> {
+    const url = "https://raw.githubusercontent.com/openfootball/world-cup.json/master/2026/worldcup.json";
+    try {
+        const resposta = await fetch(url);
+        if (!resposta.ok) throw new Error(`Erro HTTP Github: ${resposta.status}`);
+        return await resposta.json();
+    } catch (erro: any) {
+        console.error(`❌ Erro na API do GitHub (Chaveamento):`, erro.message);
+        return null;
+    }
+}
+
 // ==========================================
 // 5. MOTOR DO RADAR DE GOLS
 // ==========================================
@@ -155,6 +168,9 @@ function gerenciarRadar(): void {
                 if (!jogosEmAndamento.has(jogo.id)) return;
 
                 const jogoReferencia = cacheBaseOficial.find((j: any) => j.id_oficial === jogo.id);
+                if (!jogoReferencia) return;
+
+                const meuIdInterno = jogoReferencia.id;
                 const nomeCasa = jogoReferencia ? jogoReferencia.match["1"] : "Casa";
                 const nomeVisitante = jogoReferencia ? jogoReferencia.match["2"] : "Visitante";
 
@@ -163,7 +179,7 @@ function gerenciarRadar(): void {
                     console.log(`🛑 Fim de jogo (${jogo.id})! Removendo do radar.`);
                     jogosEmAndamento.delete(jogo.id);
                     transmitirParaUnity("STATUS_PARTIDA", {
-                        id: jogo.id,
+                        id: meuIdInterno,
                         casa: nomeCasa,
                         visitante: nomeVisitante,
                         placar: jogo.score.fullTime,
@@ -190,7 +206,7 @@ function gerenciarRadar(): void {
                         if (novoHome > antigoHome) {
                             console.log(`⚽ GOOOOOL do time da Casa (${nomeCasa})!`);
                             transmitirParaUnity("GOL", {
-                                idJogo: jogo.id,
+                                idJogo: meuIdInterno,
                                 casa: nomeCasa,
                                 visitante: nomeVisitante,
                                 placar: jogo.score.fullTime,
@@ -202,7 +218,7 @@ function gerenciarRadar(): void {
                         if (novoAway > antigoAway) {
                             console.log(`⚽ GOOOOOL do time Visitante (${nomeVisitante})!`);
                             transmitirParaUnity("GOL", {
-                                idJogo: jogo.id,
+                                idJogo: meuIdInterno,
                                 casa: nomeCasa,
                                 visitante: nomeVisitante,
                                 placar: jogo.score.fullTime,
@@ -255,7 +271,8 @@ async function vigiaMaster(forcarAtualizacao: boolean = false): Promise<void> {
     }
 
     // 1. ROTA GLOBAL (Tem cache. Usamos SÓ para olhar as chaves do futuro)
-    const dadosGlobais = await buscarNaApi('');
+    const dadosGlobais = await buscarBaseAbertaGithub();
+    // fs.writeFileSync('regras-copa-2026_API_26-06_0', JSON.stringify(dadosGlobais, null, 2));
 
     // 2. ROTA FRESCA (Sem cache! Traz o status real do jogo de hoje)
     const dataAtual = new Date();
@@ -266,7 +283,7 @@ async function vigiaMaster(forcarAtualizacao: boolean = false): Promise<void> {
 
     const dadosHoje = await buscarNaApi(`?dateFrom=${ontemBrasil}&dateTo=${amanhaBrasil}`);
 
-    if (!dadosGlobais || !dadosGlobais.matches || !dadosHoje || !dadosHoje.matches) return;
+    if (!dadosHoje || !dadosHoje.matches) return;
 
     let teveMudanca = false;
 
@@ -274,8 +291,7 @@ async function vigiaMaster(forcarAtualizacao: boolean = false): Promise<void> {
     baseLocal.forEach((jogoLocal: any) => {
         if (!jogoLocal.id_oficial) return;
 
-        const jogoFresco = dadosHoje.matches.find((j: Match) => j.id === jogoLocal.id_oficial);
-        const jogoGlobal = dadosGlobais.matches.find((j: Match) => j.id === jogoLocal.id_oficial);
+        const jogoFresco = dadosHoje.matches.find((j: Match) => j.id === jogoLocal.id_oficial);        
 
         // ==========================================
         // A) LÓGICA DE JOGOS E PLACARES FINAIS (Confia apenas no jogoFresco)
@@ -334,19 +350,33 @@ async function vigiaMaster(forcarAtualizacao: boolean = false): Promise<void> {
         // ==========================================
         // B) ATUALIZAÇÃO DE CHAVEAMENTO (Confia no jogoGlobal)
         // ==========================================
-        if (jogoLocal.id >= 73 && jogoGlobal) {
-            const siglaCasa = jogoGlobal.homeTeam?.tla;
-            const siglaFora = jogoGlobal.awayTeam?.tla;
+       if (jogoLocal.id >= 73 && dadosGlobais && dadosGlobais.matches) {
+            const jogoGithub = dadosGlobais.matches.find((m: any) => m.num === jogoLocal.id);
 
-            if (siglaCasa && siglaFora) {
-                const nomeCasaTraduzido = dicionarioTimes[siglaCasa] || siglaCasa;
-                const nomeForaTraduzido = dicionarioTimes[siglaFora] || siglaFora;
+            if (jogoGithub) {
+                const nomeCasaOriginal = jogoGithub.team1;
+                const nomeForaOriginal = jogoGithub.team2;
 
-                if (jogoLocal.match["1"] !== nomeCasaTraduzido || jogoLocal.match["2"] !== nomeForaTraduzido) {
-                    console.log(`🔄 Chaveamento atualizado (Jogo ${jogoLocal.id}): para [${nomeCasaTraduzido} x ${nomeForaTraduzido}]`);
-                    jogoLocal.match["1"] = nomeCasaTraduzido;
-                    jogoLocal.match["2"] = nomeForaTraduzido;
-                    teveMudanca = true;
+                // VERIFICAÇÃO DE SEGURANÇA
+                const temCasaReal = dicionarioTimes.hasOwnProperty(nomeCasaOriginal);
+                const temForaReal = dicionarioTimes.hasOwnProperty(nomeForaOriginal);
+
+                if (temCasaReal) {
+                    const nomeCasaTraduzido = dicionarioTimes[nomeCasaOriginal];
+                    if (jogoLocal.match["1"] !== nomeCasaTraduzido) {
+                        console.log(`🔄 Chaveamento CASA atualizado (Jogo ${jogoLocal.id}): de [${jogoLocal.match["1"]}] para [${nomeCasaTraduzido}]`);
+                        jogoLocal.match["1"] = nomeCasaTraduzido;
+                        teveMudanca = true;
+                    }
+                }
+
+                if (temForaReal) {
+                    const nomeForaTraduzido = dicionarioTimes[nomeForaOriginal];
+                    if (jogoLocal.match["2"] !== nomeForaTraduzido) {
+                        console.log(`🔄 Chaveamento FORA atualizado (Jogo ${jogoLocal.id}): de [${jogoLocal.match["2"]}] para [${nomeForaTraduzido}]`);
+                        jogoLocal.match["2"] = nomeForaTraduzido;
+                        teveMudanca = true;
+                    }
                 }
             }
         }

@@ -1107,9 +1107,9 @@
       "2": "México"
     },
     "resultados": {
-      "1": null,
-      "2": null,
-      "vencedor": null
+      "1": 0,
+      "2": 3,
+      "vencedor": "AWAY_TEAM"
     }
   },
   {
@@ -1128,9 +1128,9 @@
       "2": "Coreia do Sul"
     },
     "resultados": {
-      "1": null,
-      "2": null,
-      "vencedor": null
+      "1": 1,
+      "2": 0,
+      "vencedor": "HOME_TEAM"
     }
   },
   {
@@ -1149,9 +1149,9 @@
       "2": "Alemanha"
     },
     "resultados": {
-      "1": null,
-      "2": null,
-      "vencedor": null
+      "1": 2,
+      "2": 1,
+      "vencedor": "HOME_TEAM"
     }
   },
   {
@@ -1170,9 +1170,9 @@
       "2": "Costa do Marfim"
     },
     "resultados": {
-      "1": null,
-      "2": null,
-      "vencedor": null
+      "1": 0,
+      "2": 2,
+      "vencedor": "AWAY_TEAM"
     }
   },
   {
@@ -1191,9 +1191,9 @@
       "2": "Holanda"
     },
     "resultados": {
-      "1": null,
-      "2": null,
-      "vencedor": null
+      "1": 1,
+      "2": 3,
+      "vencedor": "AWAY_TEAM"
     }
   },
   {
@@ -1212,9 +1212,9 @@
       "2": "Suécia"
     },
     "resultados": {
-      "1": null,
-      "2": null,
-      "vencedor": null
+      "1": 1,
+      "2": 1,
+      "vencedor": "DRAW"
     }
   },
   {
@@ -1233,9 +1233,9 @@
       "2": "Estados Unidos"
     },
     "resultados": {
-      "1": null,
-      "2": null,
-      "vencedor": null
+      "1": 3,
+      "2": 2,
+      "vencedor": "HOME_TEAM"
     }
   },
   {
@@ -1254,9 +1254,9 @@
       "2": "Austrália"
     },
     "resultados": {
-      "1": null,
-      "2": null,
-      "vencedor": null
+      "1": 0,
+      "2": 0,
+      "vencedor": "DRAW"
     }
   },
   {
@@ -1275,9 +1275,9 @@
       "2": "França"
     },
     "resultados": {
-      "1": null,
-      "2": null,
-      "vencedor": null
+      "1": 1,
+      "2": 4,
+      "vencedor": "AWAY_TEAM"
     }
   },
   {
@@ -1296,9 +1296,9 @@
       "2": "Iraque"
     },
     "resultados": {
-      "1": null,
-      "2": null,
-      "vencedor": null
+      "1": 5,
+      "2": 0,
+      "vencedor": "HOME_TEAM"
     }
   },
   {
@@ -1317,9 +1317,9 @@
       "2": "Espanha"
     },
     "resultados": {
-      "1": null,
-      "2": null,
-      "vencedor": null
+      "1": 0,
+      "2": 1,
+      "vencedor": "AWAY_TEAM"
     }
   },
   {
@@ -1338,9 +1338,9 @@
       "2": "Arábia Saudita"
     },
     "resultados": {
-      "1": null,
-      "2": null,
-      "vencedor": null
+      "1": 0,
+      "2": 0,
+      "vencedor": "DRAW"
     }
   },
   {
@@ -1359,9 +1359,9 @@
       "2": "Bélgica"
     },
     "resultados": {
-      "1": null,
-      "2": null,
-      "vencedor": null
+      "1": 1,
+      "2": 5,
+      "vencedor": "AWAY_TEAM"
     }
   },
   {
@@ -1380,9 +1380,9 @@
       "2": "Irã"
     },
     "resultados": {
-      "1": null,
-      "2": null,
-      "vencedor": null
+      "1": 1,
+      "2": 1,
+      "vencedor": "DRAW"
     }
   },
   {
@@ -1523,8 +1523,8 @@
       "grupo": null
     },
     "match": {
-      "1": "2_GRUPO_A",
-      "2": "2_GRUPO_B"
+      "1": "África do Sul",
+      "2": "Canadá"
     },
     "resultados": {
       "1": null,
@@ -1544,7 +1544,7 @@
       "grupo": null
     },
     "match": {
-      "1": "1_GRUPO_E",
+      "1": "Alemanha",
       "2": "3_GRUPOS_A/B/C/D/F"
     },
     "resultados": {
@@ -1565,8 +1565,8 @@
       "grupo": null
     },
     "match": {
-      "1": "1_GRUPO_F",
-      "2": "2_GRUPO_C"
+      "1": "Holanda",
+      "2": "Marrocos"
     },
     "resultados": {
       "1": null,
@@ -1586,8 +1586,8 @@
       "grupo": null
     },
     "match": {
-      "1": "1_GRUPO_C",
-      "2": "2_GRUPO_F"
+      "1": "Brasil",
+      "2": "Japão"
     },
     "resultados": {
       "1": null,
@@ -1628,7 +1628,7 @@
       "grupo": null
     },
     "match": {
-      "1": "2_GRUPO_E",
+      "1": "Costa do Marfim",
       "2": "2_GRUPO_I"
     },
     "resultados": {
@@ -1649,7 +1649,7 @@
       "grupo": null
     },
     "match": {
-      "1": "1_GRUPO_A",
+      "1": "México",
       "2": "3_GRUPOS_C/E/F/H/I"
     },
     "resultados": {
@@ -1691,7 +1691,7 @@
       "grupo": null
     },
     "match": {
-      "1": "1_GRUPO_D",
+      "1": "Estados Unidos",
       "2": "3_GRUPOS_B/E/F/I/J"
     },
     "resultados": {
@@ -1775,7 +1775,7 @@
       "grupo": null
     },
     "match": {
-      "1": "1_GRUPO_B",
+      "1": "Suíça",
       "2": "3_GRUPOS_E/F/G/I/J"
     },
     "resultados": {
@@ -1838,7 +1838,7 @@
       "grupo": null
     },
     "match": {
-      "1": "2_GRUPO_D",
+      "1": "Austrália",
       "2": "2_GRUPO_G"
     },
     "resultados": {
