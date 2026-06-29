@@ -1485,9 +1485,9 @@
       "2": "Argentina"
     },
     "resultados": {
-      "1": null,
-      "2": null,
-      "vencedor": null
+      "1": 1,
+      "2": 3,
+      "vencedor": "AWAY_TEAM"
     }
   },
   {
@@ -1506,9 +1506,9 @@
       "2": "Áustria"
     },
     "resultados": {
-      "1": null,
-      "2": null,
-      "vencedor": null
+      "1": 3,
+      "2": 3,
+      "vencedor": "DRAW"
     }
   },
   {
@@ -1527,14 +1527,14 @@
       "2": "Canadá"
     },
     "resultados": {
-      "1": null,
-      "2": null,
-      "vencedor": null
+      "1": 0,
+      "2": 1,
+      "vencedor": "AWAY_TEAM"
     }
   },
   {
     "id": 74,
-    "id_oficial": 537423,
+    "id_oficial": 537415,
     "local": "Boston/EUA",
     "data": "2026-06-29T17:30:00-03:00",
     "rodada": {
@@ -1545,7 +1545,7 @@
     },
     "match": {
       "1": "Alemanha",
-      "2": "3_GRUPOS_A/B/C/D/F"
+      "2": "Paraguai"
     },
     "resultados": {
       "1": null,
@@ -1555,7 +1555,7 @@
   },
   {
     "id": 75,
-    "id_oficial": 537415,
+    "id_oficial": 537418,
     "local": "Monterrey/México",
     "data": "2026-06-29T22:00:00-03:00",
     "rodada": {
@@ -1576,7 +1576,7 @@
   },
   {
     "id": 76,
-    "id_oficial": 537418,
+    "id_oficial": 537423,
     "local": "Houston/EUA",
     "data": "2026-06-29T14:00:00-03:00",
     "rodada": {
@@ -1590,14 +1590,14 @@
       "2": "Japão"
     },
     "resultados": {
-      "1": null,
-      "2": null,
-      "vencedor": null
+      "1": 2,
+      "2": 1,
+      "vencedor": "HOME_TEAM"
     }
   },
   {
     "id": 77,
-    "id_oficial": 537424,
+    "id_oficial": 537416,
     "local": "Nova York e Nova Jersey/EUA",
     "data": "2026-06-30T18:00:00-03:00",
     "rodada": {
@@ -1607,8 +1607,8 @@
       "grupo": null
     },
     "match": {
-      "1": "1_GRUPO_I",
-      "2": "3_GRUPOS_C/D/F/G/H"
+      "1": "França",
+      "2": "Suécia"
     },
     "resultados": {
       "1": null,
@@ -1618,7 +1618,7 @@
   },
   {
     "id": 78,
-    "id_oficial": 537416,
+    "id_oficial": 537424,
     "local": "Dallas/EUA",
     "data": "2026-06-30T14:00:00-03:00",
     "rodada": {
@@ -1629,7 +1629,7 @@
     },
     "match": {
       "1": "Costa do Marfim",
-      "2": "2_GRUPO_I"
+      "2": "Noruega"
     },
     "resultados": {
       "1": null,
@@ -1650,7 +1650,7 @@
     },
     "match": {
       "1": "México",
-      "2": "3_GRUPOS_C/E/F/H/I"
+      "2": "Equador"
     },
     "resultados": {
       "1": null,
@@ -1670,8 +1670,8 @@
       "grupo": null
     },
     "match": {
-      "1": "1_GRUPO_L",
-      "2": "3_GRUPOS_E/H/I/J/K"
+      "1": "Inglaterra",
+      "2": "República Democrática do Congo"
     },
     "resultados": {
       "1": null,
@@ -1692,7 +1692,7 @@
     },
     "match": {
       "1": "Estados Unidos",
-      "2": "3_GRUPOS_B/E/F/I/J"
+      "2": "Bósnia e Herzegovina"
     },
     "resultados": {
       "1": null,
@@ -1712,8 +1712,8 @@
       "grupo": null
     },
     "match": {
-      "1": "1_GRUPO_G",
-      "2": "3_GRUPOS_A/E/H/I/J"
+      "1": "Bélgica",
+      "2": "Senegal"
     },
     "resultados": {
       "1": null,
@@ -1733,8 +1733,8 @@
       "grupo": null
     },
     "match": {
-      "1": "2_GRUPO_K",
-      "2": "2_GRUPO_L"
+      "1": "Portugal",
+      "2": "Croácia"
     },
     "resultados": {
       "1": null,
@@ -1754,8 +1754,8 @@
       "grupo": null
     },
     "match": {
-      "1": "1_GRUPO_H",
-      "2": "2_GRUPO_J"
+      "1": "Espanha",
+      "2": "Áustria"
     },
     "resultados": {
       "1": null,
@@ -1776,7 +1776,7 @@
     },
     "match": {
       "1": "Suíça",
-      "2": "3_GRUPOS_E/F/G/I/J"
+      "2": "Argélia"
     },
     "resultados": {
       "1": null,
@@ -1796,8 +1796,8 @@
       "grupo": null
     },
     "match": {
-      "1": "1_GRUPO_J",
-      "2": "2_GRUPO_H"
+      "1": "Argentina",
+      "2": "Cabo Verde"
     },
     "resultados": {
       "1": null,
@@ -1817,8 +1817,8 @@
       "grupo": null
     },
     "match": {
-      "1": "1_GRUPO_K",
-      "2": "3_GRUPOS_D/E/I/J/L"
+      "1": "Colômbia",
+      "2": "Gana"
     },
     "resultados": {
       "1": null,
@@ -1839,7 +1839,7 @@
     },
     "match": {
       "1": "Austrália",
-      "2": "2_GRUPO_G"
+      "2": "Egito"
     },
     "resultados": {
       "1": null,
@@ -1880,7 +1880,7 @@
       "grupo": null
     },
     "match": {
-      "1": "1_JOGO_73",
+      "1": "Canadá",
       "2": "1_JOGO_75"
     },
     "resultados": {

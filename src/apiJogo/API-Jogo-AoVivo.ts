@@ -3,6 +3,7 @@ import cron from 'node-cron';
 import * as fs from 'fs';
 import { Match, ApiResponse } from './interfaceAPI';
 import { dicionarioTimes } from './dicionarioTimes';
+import { dicionarioTimesT } from './dicionarioTimesAPI_Antiga';
 import { gerenciadorConexoes } from '../core/gerenciadorConexoes';
 
 const MEU_TOKEN: string = process.env.TOKEN_FOOTBALL_DATA || '';
@@ -168,6 +169,7 @@ function gerenciarRadar(): void {
                 if (!jogosEmAndamento.has(jogo.id)) return;
 
                 const jogoReferencia = cacheBaseOficial.find((j: any) => j.id_oficial === jogo.id);
+
                 if (!jogoReferencia) return;
 
                 const meuIdInterno = jogoReferencia.id;
@@ -274,8 +276,8 @@ async function vigiaMaster(forcarAtualizacao: boolean = false): Promise<void> {
     const dadosGlobais = await buscarBaseAbertaGithub();
     // fs.writeFileSync('regras-copa-2026_API_26-06_0', JSON.stringify(dadosGlobais, null, 2));
 
-    //const dadosCompletos = await buscarNaApi('');
-    // fs.writeFileSync('regras-copa-2026_API_26-06_0', JSON.stringify(dados2, null, 2));
+    // const dadosCompletos = await buscarNaApi('');
+    // fs.writeFileSync('regras-copa-2026_API_26-06_0', JSON.stringify(dadosCompletos, null, 2));
 
     // if (!dadosCompletos || !dadosCompletos.matches) {
     //     console.log("❌ Falha ao buscar dados da API da Football-Data.");
@@ -297,16 +299,32 @@ async function vigiaMaster(forcarAtualizacao: boolean = false): Promise<void> {
 
     // --- BLOCO ÚNICO DE PROCESSAMENTO ---
     baseLocal.forEach((jogoLocal: any) => {
-        if (!jogoLocal.id_oficial) return;
+        // if (!jogoLocal.id_oficial) return;
 
-        const jogoFresco = dadosHoje.matches.find((j: Match) => j.id === jogoLocal.id_oficial);   
-        
-        // const jogoFresco = dadosCompletos.matches.find((j: Match) => j.id === jogoLocal.id_oficial);
+        // const jogoFresco = dadosHoje.matches.find((j: Match) => j.id === jogoLocal.id_oficial);
+
+        // // const jogoFresco = dadosCompletos.matches.find((j: Match) => j.id === jogoLocal.id_oficial);
+
+        const jogoFresco = dadosHoje.matches.find((j: Match) => {
+
+            const casaTraduzida = dicionarioTimesT[j.homeTeam?.tla || ''];
+            const visitanteTraduzida = dicionarioTimesT[j.awayTeam?.tla || ''];
+
+            return casaTraduzida === jogoLocal.match["1"] && visitanteTraduzida === jogoLocal.match["2"];
+        });
 
         // ==========================================
         // A) LÓGICA DE JOGOS E PLACARES FINAIS (Confia apenas no jogoFresco)
         // ==========================================
         if (jogoFresco) {
+
+            console.log(jogoFresco.id, jogoFresco.awayTeam.tla, jogoFresco.homeTeam.tla)
+
+            if (jogoLocal.id_oficial !== jogoFresco.id) {
+                console.log(`🔄 Atualizando ID externo do jogo ${jogoLocal.match["1"]} x ${jogoLocal.match["2"]}: ${jogoLocal.id_oficial} -> ${jogoFresco.id}`);
+                jogoLocal.id_oficial = jogoFresco.id;
+                teveMudanca = true;
+            }
 
             // Consolida o Placar Final de verdade (porque o jogoFresco nunca mente)
             if (jogoFresco.status === 'FINISHED' && jogoLocal.resultados["vencedor"] === null) {
@@ -344,7 +362,7 @@ async function vigiaMaster(forcarAtualizacao: boolean = false): Promise<void> {
                         jogosEmAndamento.add(jogoLocal.id_oficial);
                         placaresMemoria[jogoLocal.id_oficial] = "0-0";
                         transmitirParaUnity("STATUS_PARTIDA", {
-                            id: jogoFresco.id,
+                            id: jogoLocal.id,
                             casa: jogoLocal.match["1"],
                             visitante: jogoLocal.match["2"],
                             placar: jogoFresco.score?.fullTime,
@@ -360,7 +378,7 @@ async function vigiaMaster(forcarAtualizacao: boolean = false): Promise<void> {
         // ==========================================
         // B) ATUALIZAÇÃO DE CHAVEAMENTO (Confia no jogoGlobal)
         // ==========================================
-       if (jogoLocal.id >= 73 && dadosGlobais && dadosGlobais.matches) {
+        if (jogoLocal.id >= 73 && dadosGlobais && dadosGlobais.matches) {
             const jogoGithub = dadosGlobais.matches.find((m: any) => m.num === jogoLocal.id);
 
             if (jogoGithub) {

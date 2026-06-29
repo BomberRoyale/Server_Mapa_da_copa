@@ -1,5 +1,5 @@
 // Exportamos a constante para que outros arquivos possam usá-la
-export const dicionarioTimes: Record<string, string> = {
+export const dicionarioTimesT: Record<string, string> = {
     "MEX": "México", "RSA": "África do Sul", "KOR": "Coreia do Sul", "CZE": "República Tcheca",
     "CAN": "Canadá", "BIH": "Bósnia e Herzegovina", "USA": "Estados Unidos", "PAR": "Paraguai",
     "QAT": "Catar", "SUI": "Suíça", "BRA": "Brasil", "MAR": "Marrocos", "HAI": "Haiti",
