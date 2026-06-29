@@ -318,8 +318,6 @@ async function vigiaMaster(forcarAtualizacao: boolean = false): Promise<void> {
         // ==========================================
         if (jogoFresco) {
 
-            console.log(jogoFresco.id, jogoFresco.awayTeam.tla, jogoFresco.homeTeam.tla)
-
             if (jogoLocal.id_oficial !== jogoFresco.id) {
                 console.log(`🔄 Atualizando ID externo do jogo ${jogoLocal.match["1"]} x ${jogoLocal.match["2"]}: ${jogoLocal.id_oficial} -> ${jogoFresco.id}`);
                 jogoLocal.id_oficial = jogoFresco.id;
