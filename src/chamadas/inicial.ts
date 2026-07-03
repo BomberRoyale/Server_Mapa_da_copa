@@ -13,6 +13,61 @@ const ARQUIVO_AO_VIVO = PASTA_DADOS + 'placares_ao_vivo.json';
 const ARQUIVO_VERSAO = PASTA_DADOS + 'versao_tabela.json';
 
 
+// const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
+
+// async function rodar(num: number) {
+//     console.log("Aguarde...");
+//     await delay(10000);
+//     teste();
+//     await delay(5000);
+//     teste2();
+//     await delay(5000);
+//     teste3();
+//     console.log("Pronto!");
+// }
+
+// function teste() {
+//     const dados = {
+//         id: "0",
+//         casa: "Brasil",
+//         visitante: "Noruega",
+//         placar: {
+//             "home": null,
+//             "away": null
+//         },
+//         status: "iniciada"
+//     };
+//     gerenciadorConexoes.transmitirParaTodos("STATUS_PARTIDA", dados);
+// }
+
+// function teste2() {
+//     const dados = {
+//         id: "0",
+//         casa: "Brasil",
+//         visitante: "Noruega",
+//         placar: {
+//             "home": 1,
+//             "away": 0
+//         },
+//         status: "gol"
+//     };
+//     gerenciadorConexoes.transmitirParaTodos("GOL", dados);
+// }
+
+// function teste3() {
+//     const dados = {
+//         id: "0",
+//         casa: "Brasil",
+//         visitante: "Noruega",
+//         placar: {
+//             "home": 2,
+//             "away": 0
+//         },
+//         status: "gol"
+//     };
+//     gerenciadorConexoes.transmitirParaTodos("GOL", dados);
+// }
+
 export default class Chamadas {
 
     verifDadosIniciais = {
@@ -165,7 +220,7 @@ export default class Chamadas {
                     console.log("ℹ️ Tabela de versão ainda não gerada pelo Vigia. Assumindo versão padrão.");
                 }
 
-                // 2. Compara as versões
+                // // 2. Compara as versões
                 if (versaoLocalCliente < versaoServidor) {
                     console.log(`📥 Usuário [${socket.id || 'Anonimo'}] desatualizado. Enviando nova Tabela Oficial...`);
 

@@ -1401,9 +1401,9 @@
       "2": "Inglaterra"
     },
     "resultados": {
-      "1": null,
-      "2": null,
-      "vencedor": null
+      "1": 0,
+      "2": 2,
+      "vencedor": "AWAY_TEAM"
     }
   },
   {
@@ -1422,9 +1422,9 @@
       "2": "Gana"
     },
     "resultados": {
-      "1": null,
-      "2": null,
-      "vencedor": null
+      "1": 2,
+      "2": 1,
+      "vencedor": "HOME_TEAM"
     }
   },
   {
@@ -1443,9 +1443,9 @@
       "2": "Portugal"
     },
     "resultados": {
-      "1": null,
-      "2": null,
-      "vencedor": null
+      "1": 0,
+      "2": 0,
+      "vencedor": "DRAW"
     }
   },
   {
@@ -1464,9 +1464,9 @@
       "2": "Uzbequistão"
     },
     "resultados": {
-      "1": null,
-      "2": null,
-      "vencedor": null
+      "1": 3,
+      "2": 1,
+      "vencedor": "HOME_TEAM"
     }
   },
   {
@@ -1548,8 +1548,8 @@
       "2": "Paraguai"
     },
     "resultados": {
-      "1": 5,
-      "2": 6,
+      "1": 4,
+      "2": 5,
       "vencedor": "AWAY_TEAM"
     }
   },
@@ -1569,9 +1569,9 @@
       "2": "Marrocos"
     },
     "resultados": {
-      "1": null,
-      "2": null,
-      "vencedor": null
+      "1": 3,
+      "2": 4,
+      "vencedor": "AWAY_TEAM"
     }
   },
   {
@@ -1611,9 +1611,9 @@
       "2": "Suécia"
     },
     "resultados": {
-      "1": null,
-      "2": null,
-      "vencedor": null
+      "1": 3,
+      "2": 0,
+      "vencedor": "HOME_TEAM"
     }
   },
   {
@@ -1632,9 +1632,9 @@
       "2": "Noruega"
     },
     "resultados": {
-      "1": null,
-      "2": null,
-      "vencedor": null
+      "1": 1,
+      "2": 2,
+      "vencedor": "AWAY_TEAM"
     }
   },
   {
@@ -1653,9 +1653,9 @@
       "2": "Equador"
     },
     "resultados": {
-      "1": null,
-      "2": null,
-      "vencedor": null
+      "1": 2,
+      "2": 0,
+      "vencedor": "HOME_TEAM"
     }
   },
   {
@@ -1674,14 +1674,14 @@
       "2": "República Democrática do Congo"
     },
     "resultados": {
-      "1": null,
-      "2": null,
-      "vencedor": null
+      "1": 2,
+      "2": 1,
+      "vencedor": "HOME_TEAM"
     }
   },
   {
     "id": 81,
-    "id_oficial": 537422,
+    "id_oficial": 537421,
     "local": "Santa Clara/EUA",
     "data": "2026-07-01T21:00:00-03:00",
     "rodada": {
@@ -1695,14 +1695,14 @@
       "2": "Bósnia e Herzegovina"
     },
     "resultados": {
-      "1": null,
-      "2": null,
-      "vencedor": null
+      "1": 2,
+      "2": 0,
+      "vencedor": "HOME_TEAM"
     }
   },
   {
     "id": 82,
-    "id_oficial": 537421,
+    "id_oficial": 537422,
     "local": "Seattle/EUA",
     "data": "2026-07-01T17:00:00-03:00",
     "rodada": {
@@ -1716,14 +1716,14 @@
       "2": "Senegal"
     },
     "resultados": {
-      "1": null,
-      "2": null,
-      "vencedor": null
+      "1": 3,
+      "2": 2,
+      "vencedor": "HOME_TEAM"
     }
   },
   {
     "id": 83,
-    "id_oficial": 537420,
+    "id_oficial": 537419,
     "local": "Toronto/Canadá",
     "data": "2026-07-02T20:00:00-03:00",
     "rodada": {
@@ -1737,14 +1737,14 @@
       "2": "Croácia"
     },
     "resultados": {
-      "1": null,
-      "2": null,
-      "vencedor": null
+      "1": 2,
+      "2": 1,
+      "vencedor": "HOME_TEAM"
     }
   },
   {
     "id": 84,
-    "id_oficial": 537419,
+    "id_oficial": 537420,
     "local": "Los Angeles/EUA",
     "data": "2026-07-02T16:00:00-03:00",
     "rodada": {
@@ -1758,9 +1758,9 @@
       "2": "Áustria"
     },
     "resultados": {
-      "1": null,
-      "2": null,
-      "vencedor": null
+      "1": 3,
+      "2": 0,
+      "vencedor": "HOME_TEAM"
     }
   },
   {
@@ -1779,14 +1779,14 @@
       "2": "Argélia"
     },
     "resultados": {
-      "1": null,
-      "2": null,
-      "vencedor": null
+      "1": 2,
+      "2": 0,
+      "vencedor": "HOME_TEAM"
     }
   },
   {
     "id": 86,
-    "id_oficial": 537428,
+    "id_oficial": 537427,
     "local": "Miami/EUA",
     "data": "2026-07-03T19:00:00-03:00",
     "rodada": {
@@ -1807,7 +1807,7 @@
   },
   {
     "id": 87,
-    "id_oficial": 537427,
+    "id_oficial": 537430,
     "local": "Kansas City/EUA",
     "data": "2026-07-03T22:30:00-03:00",
     "rodada": {
@@ -1828,7 +1828,7 @@
   },
   {
     "id": 88,
-    "id_oficial": 537430,
+    "id_oficial": 537428,
     "local": "Dallas/EUA",
     "data": "2026-07-03T15:00:00-03:00",
     "rodada": {
@@ -1849,7 +1849,7 @@
   },
   {
     "id": 89,
-    "id_oficial": 537376,
+    "id_oficial": 537375,
     "local": "Filadélfia/EUA",
     "data": "2026-07-04T18:00:00-03:00",
     "rodada": {
@@ -1859,8 +1859,8 @@
       "grupo": null
     },
     "match": {
-      "1": "1_JOGO_74",
-      "2": "1_JOGO_77"
+      "1": "Paraguai",
+      "2": "França"
     },
     "resultados": {
       "1": null,
@@ -1870,7 +1870,7 @@
   },
   {
     "id": 90,
-    "id_oficial": 537375,
+    "id_oficial": 537376,
     "local": "Houston/EUA",
     "data": "2026-07-04T14:00:00-03:00",
     "rodada": {
@@ -1881,7 +1881,7 @@
     },
     "match": {
       "1": "Canadá",
-      "2": "1_JOGO_75"
+      "2": "Marrocos"
     },
     "resultados": {
       "1": null,
@@ -1901,8 +1901,8 @@
       "grupo": null
     },
     "match": {
-      "1": "1_JOGO_76",
-      "2": "1_JOGO_78"
+      "1": "Brasil",
+      "2": "Noruega"
     },
     "resultados": {
       "1": null,
@@ -1922,8 +1922,8 @@
       "grupo": null
     },
     "match": {
-      "1": "1_JOGO_79",
-      "2": "1_JOGO_80"
+      "1": "México",
+      "2": "Inglaterra"
     },
     "resultados": {
       "1": null,
@@ -1943,8 +1943,8 @@
       "grupo": null
     },
     "match": {
-      "1": "1_JOGO_83",
-      "2": "1_JOGO_84"
+      "1": "Portugal",
+      "2": "Espanha"
     },
     "resultados": {
       "1": null,
@@ -1964,8 +1964,8 @@
       "grupo": null
     },
     "match": {
-      "1": "1_JOGO_81",
-      "2": "1_JOGO_82"
+      "1": "Estados Unidos",
+      "2": "Bélgica"
     },
     "resultados": {
       "1": null,
@@ -2006,7 +2006,7 @@
       "grupo": null
     },
     "match": {
-      "1": "1_JOGO_85",
+      "1": "Suíça",
       "2": "1_JOGO_87"
     },
     "resultados": {
