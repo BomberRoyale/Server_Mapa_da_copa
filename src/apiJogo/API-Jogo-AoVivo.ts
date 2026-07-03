@@ -276,8 +276,8 @@ async function vigiaMaster(forcarAtualizacao: boolean = false): Promise<void> {
     const dadosGlobais = await buscarBaseAbertaGithub();
     // fs.writeFileSync('regras-copa-2026_API_26-06_0', JSON.stringify(dadosGlobais, null, 2));
 
-    const dadosCompletos = await buscarNaApi('');
-    fs.writeFileSync('regras-copa-2026_API_26-06_0', JSON.stringify(dadosCompletos, null, 2));
+    // const dadosCompletos = await buscarNaApi('');
+    // fs.writeFileSync('regras-copa-2026_API_26-06_0', JSON.stringify(dadosCompletos, null, 2));
 
     // if (!dadosCompletos || !dadosCompletos.matches) {
     //     console.log("❌ Falha ao buscar dados da API da Football-Data.");
@@ -291,8 +291,8 @@ async function vigiaMaster(forcarAtualizacao: boolean = false): Promise<void> {
     const ontemBrasil = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Sao_Paulo' }).format(dataOntem);
     const amanhaBrasil = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Sao_Paulo' }).format(dataAmanha);
 
-    // const dadosHoje = await buscarNaApi(`?dateFrom=${ontemBrasil}&dateTo=${amanhaBrasil}`);
-    const dadosHoje = await buscarNaApi('');
+    const dadosHoje = await buscarNaApi(`?dateFrom=${ontemBrasil}&dateTo=${amanhaBrasil}`);
+    // const dadosHoje = await buscarNaApi('');
 
     if (!dadosHoje || !dadosHoje.matches) return;
 
